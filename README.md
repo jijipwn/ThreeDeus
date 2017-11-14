@@ -22,3 +22,9 @@ A: Of Course.
 
 ### Are you still working on this?
 A: Of Course!
+
+### How do I use it?
+A: Just run the .bat file, simple
+
+### Does it do everything for me?
+A: No... It only Downloads the files, and opens the guide, you need to do it yourself
