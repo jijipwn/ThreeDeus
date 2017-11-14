@@ -1,5 +1,5 @@
 @echo off
-color 0a
+color 0d
 echo THREEDEEESS-JPN BY JIJI
 echo .
 echo PRESS ANYTHING TO START
@@ -20,7 +20,7 @@ echo THREEDEEESS DOWNLOAD COMPLETE!
 echo .
 echo YOU WILL NEED TO GET THE OTHERAPP PAYLOAD MANUALLY
 echo .
-echo PRESS ANYTHING TO GOTO THE OTHERAPP PAYLOAD PAGE
+echo PRESS ANYTHING TO GOTO THE OTHERAPP PAYLOAD PAGE AND GUIDE
 pause>null
 start "" https://smealum.github.io/3ds/#otherapp
 start "" https://3ds.guide/homebrew-launcher-(soundhax)
