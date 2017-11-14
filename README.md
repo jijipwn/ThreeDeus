@@ -30,4 +30,5 @@ A: Of Course!
 A: Just run the .bat file, simple
 
 ### Does it do everything for me?
-A: No... It only Downloads the files, and opens the guide, you need to do it yourself
+A: No... It only Downloads the files, and opens the guide, you need to do it yourself 
+This is because ThreeDeus is not attempting to replace the guide, it's for assisting you while your reading the guide.
