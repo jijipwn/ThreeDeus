@@ -9,10 +9,10 @@ ThreeDeus does what it says above, It downloads the files needed for Homebrew fo
 * Easy access to required files
 * Active Development
 
-## Download:
+### Download:
 You can download ThreeDeus [here.](https://github.com/jijipwn/ThreeDeus/releases/latest)
 
-## FAQ:
+# FAQ:
 
 ### Is it malware?
 A: [No.](https://www.virustotal.com/#/file/ebb87f27bc3e18bf75cfefb61ba4737b176e684c087d125ee016902ecfd8c168/detection)
