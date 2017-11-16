@@ -13,7 +13,7 @@ echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 88888
 echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
 echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
 echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
-echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 v3.2
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 v3.5C
 echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P' by jijipwn
 echo.
 echo Select a task:
@@ -116,10 +116,12 @@ echo =============
 echo.
 echo 1) Download the Essentials Pack
 echo 2) Go Back
+echo 3) Test wget
 echo.                                                                                               
 set /p web=Type option:
 if "%web%"=="1" goto essentials
 if "%web%"=="2" goto home
+if "%web%"=="3" goto wget
 goto WIIU
 
 :WII
@@ -260,21 +262,21 @@ pause>null
 cls
 echo DOWNLOADING FILES, PLEASE WAIT...
 echo DOWNLOADING BOOT.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx -OutFile boot.3dsx"
+curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
 echo DOWNLOADING SOUNDHAX-USA-N3DS.M4A
-powershell -Command "Invoke-WebRequest https://github.com/nedwill/soundhax/blob/master/soundhax-usa-n3ds.m4a -OutFile soundhax-usa-n3ds.m4a"
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-usa-n3ds.m4a
 echo DOWNLOADING SOUNDHAX-USA-O3DS.M4A
-powershell -Command "Invoke-WebRequest https://github.com/nedwill/soundhax/blob/master/soundhax-usa-o3ds.m4a -OutFile soundhax-usa-o3ds.m4a"
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-usa-o3ds.m4a
 echo DOWNLOADING SAFEB9SINSTALLER
-powershell -Command "Invoke-WebRequest https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip -OutFile SafeB9SInstaller-20170605-122940.zip"
+curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
 echo DOWNLOADING BOOT9STRAP
-powershell -Command "Invoke-WebRequest https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip -OutFile boot9strap-1.3.zip"
+curl -LO https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip
 echo DOWNLOADING SAFEHAX.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx -OutFile safehax.3dsx"
+curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
 echo DOWNLOADING UDSPLOIT.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx -OutFile udsploit.3dsx"
+curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
 echo DOWNLOADING LUMA3DS
-powershell -Command "Invoke-WebRequest https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z -OutFile Luma3DSv8.1.1.7z"
+curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
 cls
 color 0a
 echo THREEDEUS DOWNLOAD COMPLETE!
@@ -339,21 +341,21 @@ pause>null
 cls
 echo DOWNLOADING FILES, PLEASE WAIT...
 echo DOWNLOADING BOOT.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx -OutFile boot.3dsx"
+curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
 echo DOWNLOADING SOUNDHAX-EUR-N3DS.M4A
-powershell -Command "Invoke-WebRequest https://github.com/nedwill/soundhax/blob/master/soundhax-eur-n3ds.m4a -OutFile soundhax-eur-n3ds.m4a"
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-eur-n3ds.m4a
 echo DOWNLOADING SOUNDHAX-EUR-O3DS.M4A
-powershell -Command "Invoke-WebRequest https://github.com/nedwill/soundhax/blob/master/soundhax-eur-o3ds.m4a -OutFile soundhax-eur-o3ds.m4a"
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-eur-o3ds.m4a
 echo DOWNLOADING SAFEB9SINSTALLER
-powershell -Command "Invoke-WebRequest https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip -OutFile SafeB9SInstaller-20170605-122940.zip"
+curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
 echo DOWNLOADING BOOT9STRAP
-powershell -Command "Invoke-WebRequest https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip -OutFile boot9strap-1.3.zip"
+curl -LO https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip
 echo DOWNLOADING SAFEHAX.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx -OutFile safehax.3dsx"
+curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
 echo DOWNLOADING UDSPLOIT.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx -OutFile udsploit.3dsx"
+curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
 echo DOWNLOADING LUMA3DS
-powershell -Command "Invoke-WebRequest https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z -OutFile Luma3DSv8.1.1.7z"
+curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
 cls
 color 0a
 echo THREEDEUS DOWNLOAD COMPLETE!
@@ -418,21 +420,21 @@ pause>null
 cls
 echo DOWNLOADING FILES, PLEASE WAIT...
 echo DOWNLOADING BOOT.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx -OutFile boot.3dsx"
+curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
 echo DOWNLOADING SOUNDHAX-JPN-N3DS.M4A
-powershell -Command "Invoke-WebRequest https://github.com/nedwill/soundhax/blob/master/soundhax-jpn-n3ds.m4a -OutFile soundhax-jpn-n3ds.m4a"
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-jpn-n3ds.m4a
 echo DOWNLOADING SOUNDHAX-JPN-O3DS.M4A
-powershell -Command "Invoke-WebRequest https://github.com/nedwill/soundhax/blob/master/soundhax-jpn-o3ds.m4a -OutFile soundhax-jpn-o3ds.m4a"
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-jpn-o3ds.m4a
 echo DOWNLOADING SAFEB9SINSTALLER
-powershell -Command "Invoke-WebRequest https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip -OutFile SafeB9SInstaller-20170605-122940.zip"
+curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
 echo DOWNLOADING BOOT9STRAP
-powershell -Command "Invoke-WebRequest https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip -OutFile boot9strap-1.3.zip"
+curl -LO https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip
 echo DOWNLOADING SAFEHAX.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx -OutFile safehax.3dsx"
+curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
 echo DOWNLOADING UDSPLOIT.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx -OutFile udsploit.3dsx"
+curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
 echo DOWNLOADING LUMA3DS
-powershell -Command "Invoke-WebRequest https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z -OutFile Luma3DSv8.1.1.7z"
+curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
 cls
 color 0a
 echo THREEDEUS DOWNLOAD COMPLETE!
@@ -497,13 +499,13 @@ pause>null
 cls
 echo DOWNLOADING FILES, PLEASE WAIT...
 echo DOWNLOADING DS_NTRBOOT_FLASHER.NDS
-powershell -Command "Invoke-WebRequest https://github.com/ntrteam/ds_ntrboot_flasher/releases/download/v4.0/ds_ntrboot_flasher.nds -OutFile ds_ntrboot_flasher.nds"
+curl -LO https://github.com/ntrteam/ds_ntrboot_flasher/releases/download/v4.0/ds_ntrboot_flasher.nds
 echo DOWNLOADING DS_NTRBOOT_FLASHER_DSI.NDS
-powershell -Command "Invoke-WebRequest https://github.com/ntrteam/ds_ntrboot_flasher/releases/download/v4.0/ds_ntrboot_flasher_dsi.nds -OutFile ds_ntrboot_flasher_dsi.nds"
+curl -LO https://github.com/ntrteam/ds_ntrboot_flasher/releases/download/v4.0/ds_ntrboot_flasher_dsi.nds
 echo DOWNLOADING NTRBOOT_FLASHER.FIRM
-powershell -Command "Invoke-WebRequest https://github.com/ntrteam/ntrboot_flasher/releases/download/v0.3.1/ntrboot_flasher.firm -OutFile ntrboot_flasher.firm"
+curl -LO https://github.com/ntrteam/ntrboot_flasher/releases/download/v0.3.1/ntrboot_flasher.firm
 echo DOWNLOADING BOOT9STRAP-NTR
-powershell -Command "Invoke-WebRequest https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3-ntr.zip -OutFile boot9strap-1.3-ntr.zip"
+curl -LO https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3-ntr.zip
 cls
 color 0a
 echo THREEDEUS DOWNLOAD COMPLETE!
@@ -567,31 +569,31 @@ pause>null
 cls
 echo DOWNLOADING FILES, PLEASE WAIT...
 echo DOWNLOADING BOOT.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx -OutFile boot.3dsx"
+curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
 echo DOWNLOADING SAFEB9SINSTALLER
-powershell -Command "Invoke-WebRequest https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip -OutFile SafeB9SInstaller-20170605-122940.zip"
+curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
 echo DOWNLOADING BOOT9STRAP
-powershell -Command "Invoke-WebRequest https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip -OutFile boot9strap-1.3.zip"
+curl -LO https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip
 echo DOWNLOADING LUMA3DS
-powershell -Command "Invoke-WebRequest https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z -OutFile Luma3DSv8.1.1.7z"
+curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
 echo DOWNLOADING CLEANUP_SD_CARD.GM9
-powershell -Command "Invoke-WebRequest https://3ds.guide/gm9_scripts/cleanup_sd_card.gm9 -OutFile cleanup_sd_card.gm9"
+curl -LO https://3ds.guide/gm9_scripts/cleanup_sd_card.gm9
 echo DOWNLOADING SETUP_CTRNAND_LUMA3DS.GM9
-powershell -Command "Invoke-WebRequest https://3ds.guide/gm9_scripts/setup_ctrnand_luma3ds.gm9 -OutFile setup_ctrnand_luma3ds.gm9"
+curl -LO https://3ds.guide/gm9_scripts/setup_ctrnand_luma3ds.gm9
 echo DOWNLOADING ANEMONE3DS
-powershell -Command "Invoke-WebRequest https://github.com/astronautlevel2/Anemone3DS/releases/download/v1.2.2/Anemone3DS.cia -OutFile Anemone3DS.cia"
+curl -LO https://github.com/astronautlevel2/Anemone3DS/releases/download/v1.2.2/Anemone3DS.cia
 echo DOWNLOADING CHECKPOINT
-powershell -Command "Invoke-WebRequest https://github.com/BernardoGiordano/Checkpoint/releases/download/v2.0.2/Checkpoint.cia -OutFile Checkpoint.cia"
+curl -LO https://github.com/BernardoGiordano/Checkpoint/releases/download/v2.0.2/Checkpoint.cia
 echo DOWNLOADING HBLAUNCHER_LOADER
-powershell -Command "Invoke-WebRequest https://github.com/yellows8/hblauncher_loader/releases/download/v1.3/hblauncher_loader_v1.3.zip -OutFile hblauncher_loader_v1.3.zip"
+curl -LO https://github.com/yellows8/hblauncher_loader/releases/download/v1.3/hblauncher_loader_v1.3.zip
 echo DOWNLOADING LUMAUPDATER
-powershell -Command "Invoke-WebRequest https://github.com/KunoichiZ/lumaupdate/releases/download/v2.2/lumaupdater.cia -OutFile lumaupdater.cia"
+curl -LO https://github.com/KunoichiZ/lumaupdate/releases/download/v2.2/lumaupdater.cia
 echo DOWNLOADING DSP1
-powershell -Command "Invoke-WebRequest https://github.com/zoogie/DSP1/releases/download/v1.0/DSP1.cia -OutFile DSP1.cia"
+curl -LO https://github.com/zoogie/DSP1/releases/download/v1.0/DSP1.cia
 echo DOWNLOADING FBI
-powershell -Command "Invoke-WebRequest https://github.com/Steveice10/FBI/releases/download/2.4.12/FBI.zip -OutFile FBI.zip"
+curl -LO https://github.com/Steveice10/FBI/releases/download/2.4.12/FBI.zip
 echo DOWNLOADING GODMODE9
-powershell -Command "Invoke-WebRequest https://github.com/d0k3/GodMode9/releases/download/v1.4.3/GodMode9-v1.4.3-20171014100440.zip -OutFile GodMode9-v1.4.3-20171014100440.zip"
+curl -LO https://github.com/d0k3/GodMode9/releases/download/v1.4.3/GodMode9-v1.4.3-20171014100440.zip
 cls
 color 0a
 echo THREEDEUS DOWNLOAD COMPLETE!
@@ -655,21 +657,21 @@ pause>null
 cls
 echo DOWNLOADING FILES, PLEASE WAIT...
 echo DOWNLOADING BOOT.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx -OutFile boot.3dsx"
+curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
 echo DOWNLOADING SOUNDHAX-KOR-N3DS.M4A
-powershell -Command "Invoke-WebRequest https://github.com/nedwill/soundhax/blob/master/soundhax-kor-n3ds.m4a -OutFile soundhax-kor-n3ds.m4a"
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-kor-n3ds.m4a
 echo DOWNLOADING SOUNDHAX-KOR-O3DS.M4A
-powershell -Command "Invoke-WebRequest https://github.com/nedwill/soundhax/blob/master/soundhax-kor-o3ds.m4a -OutFile soundhax-kor-o3ds.m4a"
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-kor-o3ds.m4a
 echo DOWNLOADING SAFEB9SINSTALLER
-powershell -Command "Invoke-WebRequest https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip -OutFile SafeB9SInstaller-20170605-122940.zip"
+curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
 echo DOWNLOADING BOOT9STRAP
-powershell -Command "Invoke-WebRequest https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip -OutFile boot9strap-1.3.zip"
+curl -LO https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip
 echo DOWNLOADING SAFEHAX.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx -OutFile safehax.3dsx"
+curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
 echo DOWNLOADING UDSPLOIT.3DSX
-powershell -Command "Invoke-WebRequest https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx -OutFile udsploit.3dsx"
+curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
 echo DOWNLOADING LUMA3DS
-powershell -Command "Invoke-WebRequest https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z -OutFile Luma3DSv8.1.1.7z"
+curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
 cls
 color 0a
 echo THREEDEUS DOWNLOAD COMPLETE!
@@ -685,11 +687,11 @@ color 0d
 cls
 echo DOWNLOADING FILES, PLEASE WAIT...
 echo DOWNLOADING FREESHOP
-powershell -Command "Invoke-WebRequest https://get.freeshop.pw/latest -OutFile freeShop-latest.cia"
+curl -LO https://get.freeshop.pw/latest  freeShop-latest.cia"
 echo DOWNLOADING PKSM
-powershell -Command "Invoke-WebRequest https://github.com/BernardoGiordano/PKSM/releases/download/4.5.0/PKSM.cia -OutFile PKSM.cia"
+curl -LO https://github.com/BernardoGiordano/PKSM/releases/download/4.5.0/PKSM.cia
 echo DOWNLOADING BOOTNTR-SELECTOR
-powershell -Command "Invoke-WebRequest https://github.com/Nanquitas/BootNTR/releases/download/v.2.9/BootNTRSelector-PabloMK7-Banner.cia -OutFile BootNTRSelector-PabloMK7-Banner.cia"
+curl -LO https://github.com/Nanquitas/BootNTR/releases/download/v.2.9/BootNTRSelector-PabloMK7-Banner.cia
 cls
 color 0a
 echo THREEDEUS DOWNLOAD COMPLETE!
@@ -745,13 +747,13 @@ pause>null
 cls
 echo DOWNLOADING FILES, PLEASE WAIT...
 echo DOWNLOADING UGOPWN
-powershell -Command "Invoke-WebRequest https://github.com/dsiguide/dsiguide.github.io/raw/master/files/ugopwn.zip -OutFile ugopwn.zip"
+curl -LO https://github.com/dsiguide/dsiguide.github.io/raw/master/files/ugopwn.zip
 echo FWTOOL MUST BE DOWNLOADED MANUALY
 start "" https://mega.nz/#!AzYlHQ4Q!Ok4krwUPXcvPC2f0tgC4W1PA_0SPnTMAVXUFP3GfM3c
 echo DOWNLOADING HXD
-powershell -Command "Invoke-WebRequest http://mh-nexus.de/downloads/HxDen.zip -OutFile HxDen.zip"
+curl -LO http://mh-nexus.de/downloads/HxDen.zip
 echo DOWNLOADING DSI SRL EXTRACT
-powershell -Command "Invoke-WebRequest https://github.com/dsiguide/dsiguide.github.io/raw/master/files/dsi_srl_extract.zip -OutFile dsi_srl_extract.zip"
+curl -LO https://github.com/dsiguide/dsiguide.github.io/raw/master/files/dsi_srl_extract.zip
 echo NO$GBA MUST BE DOWNLOADED SEMI-MANUALLY
 start "" https://www.emuparadise.me/emulators/files/user/n-west-w-1776.zip
 echo CODES.TXT MUST BE DOWNLOADED MANUALLY
@@ -761,9 +763,9 @@ start "" https://mega.nz/#!sm4BWKoQ!KgHd58CzKknqmGQO2nicnn-JYcYixB9YZdqQz4Lm-Z8
 echo NUSDOWNLOADER (WITH DSIKEY.BIN GENERATOR) MUST BE DOWNLOADED MANUALLY
 start "" https://mega.nz/#!8mZEVTyZ!hMvqWmnjiylYEGAGHfaQOwfKSnQBJX1e5VfBgFJo0vw
 echo DOWNLOADING OSFMOUNT
-powershell -Command "Invoke-WebRequest https://www.osforensics.com/downloads/osfmount.exe -OutFile osfmount.exe"
+curl -LO https://www.osforensics.com/downloads/osfmount.exe
 echo DOWNLOADING DSI COMMON KEY BIN
-powershell -Command "Invoke-WebRequest https://dsiguide.me/files/DSiKeyGrabber.zip -OutFile DSiKeyGrabber.zip"
+curl -LO https://dsiguide.me/files/DSiKeyGrabber.zip
 echo DSI BIOS MUST BE DOWNLOADED SEMI-MANUALLY
 start "" https://bit.ly/2z3XnaG
 echo DSI FOOTER TEMPLATE MUST BE DOWNLOADED SEMI-MANUALLY
@@ -806,30 +808,30 @@ echo THREEDEUS FOR WII U BY JIJI
 echo PRESS ANYTHING TO START
 pause>null
 echo DOWNLOADING CONFIG.TXT
-powershell -Command "Invoke-WebRequest https://wiiu.guide/images/config.txt -OutFile config.txt"
+curl -LO https://wiiu.guide/images/config.txt  config.txt"
 echo DOWNLOADING HOMEBREW APP STORE
-powershell -Command "Invoke-WebRequest https://github.com/vgmoose/hbas/releases/download/1.5/appstore15.zip -OutFile appstore15.zip"
+curl -LO https://github.com/vgmoose/hbas/releases/download/1.5/appstore15.zip
 echo DOWNLOADING WUP INSTALLER GX2
-powershell -Command "Invoke-WebRequest https://wiiubru.com/appstore/zips/wup_installer_gx2.zip -OutFile wup_installer_gx2.zip"
-powershell -Command "Invoke-WebRequest https://www.wiiubru.com/appstore/chan_zips/wup_installer_gx2.zip -OutFile wup_installer_gx2_chn.zip"
+curl -LO https://wiiubru.com/appstore/zips/wup_installer_gx2.zip
+curl -LO https://www.wiiubru.com/appstore/chan_zips/wup_installer_gx2.zip
 echo DOWNLOADING DISC2APP
-powershell -Command "Invoke-WebRequest https://github.com/koolkdev/disc2app/releases/download/v1.0/disc2app.zip -OutFile disc2app.zip"
+curl -LO https://github.com/koolkdev/disc2app/releases/download/v1.0/disc2app.zip
 echo DOWNLOADING HID TO VPAD
-powershell -Command "Invoke-WebRequest https://github.com/Maschell/hid_to_vpad/releases/download/v0.9j/hidtovpad-v0.9j.zip -OutFile hidtovpad-v0.9j.zip"
+curl -LO https://github.com/Maschell/hid_to_vpad/releases/download/v0.9j/hidtovpad-v0.9j.zip
 echo DOWNLOADING MOCHACFW
-powershell -Command "Invoke-WebRequest https://github.com/dimok789/mocha/releases/download/v0.2/mocha.v0.2.zip -OutFile mocha.v0.2.zip"
+curl -LO https://github.com/dimok789/mocha/releases/download/v0.2/mocha.v0.2.zip
 echo DOWNLOADING SAVEMII
-powershell -Command "Invoke-WebRequest https://github.com/GabyPCgeeK/savemii/releases/download/1.2.0.mod5/savemii_mod5.zip -OutFile savemii_mod5.zip"
+curl -LO https://github.com/GabyPCgeeK/savemii/releases/download/1.2.0.mod5/savemii_mod5.zip
 echo DOWNLOADING HOMEBREW LAUNCHER CHANNEL
-powershell -Command "Invoke-WebRequest https://github.com/dimok789/homebrew_launcher/releases/download/v2.1/homebrew_launcher_channel.v2.1.zip -OutFile homebrew_launcher_channel.v2.1.zip"
+curl -LO https://github.com/dimok789/homebrew_launcher/releases/download/v2.1/homebrew_launcher_channel.v2.1.zip
 echo DOWNLOADING HOMEBREW LAUNCHER
-powershell -Command "Invoke-WebRequest https://github.com/dimok789/homebrew_launcher/releases/download/1.4/homebrew_launcher.v1.4.zip -OutFile homebrew_launcher.v1.4.zip"
+curl -LO https://github.com/dimok789/homebrew_launcher/releases/download/1.4/homebrew_launcher.v1.4.zip
 echo DOWNLOADING CBHC
-powershell -Command "Invoke-WebRequest https://github.com/FIX94/haxchi/releases/download/v2.5u2_v1.6/CBHC_v1.6.zip -OutFile CBHC_v1.6.zip"
+curl -LO https://github.com/FIX94/haxchi/releases/download/v2.5u2_v1.6/CBHC_v1.6.zip
 echo DOWNLOADING HAXCHI
-powershell -Command "Invoke-WebRequest https://github.com/FIX94/haxchi/releases/download/v2.5u2_v1.6/Haxchi_v2.5u2.zip -OutFile Haxchi_v2.5u2.zip"
+curl -LO https://github.com/FIX94/haxchi/releases/download/v2.5u2_v1.6/Haxchi_v2.5u2.zip
 echo DOWNLOADING NNU-PATCHER
-powershell -Command "Invoke-WebRequest https://wiiubru.com/appstore/zips/nnupatcher.zip -OutFile nnupatcher.zip"
+curl -LO https://wiiubru.com/appstore/zips/nnupatcher.zip
 cls
 color 0a
 echo THREEDEUS DOWNLOAD COMPLETE!
@@ -881,25 +883,25 @@ pause>null
 echo LETTERBOMB MUST BE DOWNLOADED MANUALLY
 start "" https://please.hackmii.com/
 echo DOWNLOADING PRIILOADER
-powershell -Command "Invoke-WebRequest https://wii.guide/assets/files/Priiloader_v0_8_2.zip -OutFile Priiloader_v0_8_2.zip"
+curl -LO https://wii.guide/assets/files/Priiloader_v0_8_2.zip
 echo CIOS MUST BE DOWNLOADED MANUALLY
 start "" https://bit.ly/2mrZon5
 echo DOWNLOADING IOS PATCHER FOR RC24
-powershell -Command "Invoke-WebRequest https://github.com/RiiConnect24/IOS-Patcher/releases/download/v1.8.6/Windows.zip -OutFile IOS-PATCHER-for-rc24.zip"
+curl -LO https://github.com/RiiConnect24/IOS-Patcher/releases/download/v1.8.6/Windows.zip
 echo DOWNLOADING MAIL PATCHER FOR RC24
-powershell -Command "Invoke-WebRequest https://github.com/RiiConnect24/RiiConnect24-Mail-Patcher-Windows/releases/download/v1.0.6/RiiConnect24-Mail-Patcher-Windows.zip -OutFile RiiConnect24-Mail-Patcher-Windows.zip"
+curl -LO https://github.com/RiiConnect24/RiiConnect24-Mail-Patcher-Windows/releases/download/v1.0.6/RiiConnect24-Mail-Patcher-Windows.zip
 echo DOWNLOADING WII MOD LITE
-powershell -Command "Invoke-WebRequest https://github.com/RiiConnect24/Wii-Mod-Lite/releases/download/v1.7/WiiModLite_v1.7.zip -OutFile WiiModLite_v1.7.zip"
+curl -LO https://github.com/RiiConnect24/Wii-Mod-Lite/releases/download/v1.7/WiiModLite_v1.7.zip
 echo WIIXPLORER MUST BE DOWNLOADED SEMI-MANUALLY
 start "" https://bit.ly/2zDZW2P
 echo DOWNLOADING WIIMMFI DISC PATCHER
-powershell -Command "Invoke-WebRequest https://wii.guide/assets/files/autowiimmfipatcher0.4.zip -OutFile autowiimmfipatcher0.4.zip"
+curl -LO https://wii.guide/assets/files/autowiimmfipatcher0.4.zip
 echo USB LOADER GX MUST BE DOWNLOADED SEMI-MANUALLY
 start "" https://bit.ly/2hrD241
 echo DOWNLOADING WIIMMFI WIIWARE PATCHER
-powershell -Command "Invoke-WebRequest https://github.com/RiiConnect24/auto-wiiware-patcher/releases/download/v2.1.4/Windows.zip -OutFile WIIMMFI-Wiiware.zip"
+curl -LO https://github.com/RiiConnect24/auto-wiiware-patcher/releases/download/v2.1.4/Windows.zip
 echo DOWNLOADING WIIMMFI COMPETITION PATCHER
-powershell -Command "Invoke-WebRequest https://competitions.wiimmfi.de/competition-tool-wii.zip -OutFile competition-tool-wii.zip"
+curl -LO https://competitions.wiimmfi.de/competition-tool-wii.zip
 cls
 color 0a
 echo THREEDEUS DOWNLOAD COMPLETE!
@@ -908,4 +910,6 @@ echo PRESS ANYTHING TO OPEN THE GUIDE AND GO HOME
 pause>null
 start "" https://wii.guide/letterbomb
 goto home
+
+:wget
 
