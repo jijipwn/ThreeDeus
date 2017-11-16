@@ -28,6 +28,7 @@ A: Of Course!
 
 ### How do I use it?
 A: Just run the .bat file, simple
+### Note: you need cURL for it to work now, you can download it [here](https://curl.haxx.se/download.html)
 
 ### Does it do everything for me?
 A: No... It only Downloads the files, and opens the guide, you need to do it yourself 
