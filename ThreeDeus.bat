@@ -1,5 +1,4 @@
 @echo off
-mode 1000
 goto home
 title ThreeDeus
 :home
@@ -13,17 +12,17 @@ echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 88888
 echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
 echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
 echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
-echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 v3.5C
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 v4.0C
 echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P' by jijipwn
 echo.
 echo Select a task:
 echo =============
 echo.
 echo 1) 3DS
-echo 2) WII U
-echo 3) WII
-echo 4) DSI
-echo 5) GUIDE
+echo 2) Wii U
+echo 3) Wii
+echo 4) DSi
+echo 5) Guide
 echo 6) Exit ThreeDeus
 echo.                                                                                               
 set /p web=Type option:
@@ -116,13 +115,15 @@ echo =============
 echo.
 echo 1) Download the Essentials Pack
 echo 2) Go Back
-echo 3) Test wget
+echo 3) Test mega-tools
+echo 4) Test cURL
 echo.                                                                                               
 set /p web=Type option:
 if "%web%"=="1" goto essentials
 if "%web%"=="2" goto home
-if "%web%"=="3" goto wget
-goto WIIU
+if "%web%"=="3" goto mega-tools
+if "%web%"=="4" goto curl
+goto debv
 
 :WII
 cls
@@ -256,32 +257,32 @@ echo                                       `.-:/+osoo++//:://///++++++oooooo+//o
 echo                                               .-:/+ossoo++//://////+++///os`                       
 echo                                                      `.-:/+osso+++/::::/os`                        
 echo                                                              `.-:/+ossss+`
-echo THREEDEUS FOR USA BY JIJI
-echo PRESS ANYTHING TO START   
+echo ThreeDeus for USA Soundhax by jijipwn
+echo Press anything to start......  
 pause>null
 cls
-echo DOWNLOADING FILES, PLEASE WAIT...
-echo DOWNLOADING BOOT.3DSX
+echo Downloading files, please wait...
+echo Downloading boot.3dsx
 curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
-echo DOWNLOADING SOUNDHAX-USA-N3DS.M4A
+echo Downloading soundhax-usa-n3ds.m4a
 curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-usa-n3ds.m4a
-echo DOWNLOADING SOUNDHAX-USA-O3DS.M4A
+echo Downloading soundhax-usa-o3ds.m4a
 curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-usa-o3ds.m4a
-echo DOWNLOADING SAFEB9SINSTALLER
+echo Downloading SafeB9SInstaller
 curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
-echo DOWNLOADING BOOT9STRAP
-curl -LO https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip
-echo DOWNLOADING SAFEHAX.3DSX
+echo Downloading Boot9Strap
+curl -LO https://github.com/SciresM/Boot9Strap/releases/download/1.3/Boot9Strap-1.3.zip
+echo Downloading safehax.3dsx
 curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
-echo DOWNLOADING UDSPLOIT.3DSX
+echo Downloading udsploit.3dsx
 curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
-echo DOWNLOADING LUMA3DS
+echo Downloading Luma3DS
 curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
 cls
 color 0a
-echo THREEDEUS DOWNLOAD COMPLETE!
-echo YOU WILL NEED TO GET THE OTHERAPP PAYLOAD MANUALLY
-echo PRESS ANYTHING TO GOTO THE OTHERAPP PAYLOAD PAGE AND GUIDE
+echo ThreeDeus download complete!
+echo You will need to get otherapp.bin manually
+echo Press anything to open the otherapp generator and the guide.
 pause>null
 start "" https://smealum.github.io/3ds/#otherapp
 start "" https://3ds.guide/homebrew-launcher-(soundhax)
@@ -335,32 +336,32 @@ echo                                       `.-:/+osoo++//:://///++++++oooooo+//o
 echo                                               .-:/+ossoo++//://////+++///os`                       
 echo                                                      `.-:/+osso+++/::::/os`                        
 echo                                                              `.-:/+ossss+` 
-echo THREEDEUS FOR EUR BY JIJI
-echo PRESS ANYTHING TO START  
+echo ThreeDeus for EUR soundhax by jijipwn
+echo Press anything to start...  
 pause>null
 cls
-echo DOWNLOADING FILES, PLEASE WAIT...
-echo DOWNLOADING BOOT.3DSX
+echo Downloading files, please wait...
+echo Downloading boot.3dsx
 curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
-echo DOWNLOADING SOUNDHAX-EUR-N3DS.M4A
+echo Downloading soundhax-eur-n3ds.m4a
 curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-eur-n3ds.m4a
-echo DOWNLOADING SOUNDHAX-EUR-O3DS.M4A
+echo Downloading soundhax-eur-o3ds.m4a
 curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-eur-o3ds.m4a
-echo DOWNLOADING SAFEB9SINSTALLER
+echo Downloading SafeB9SInstaller
 curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
-echo DOWNLOADING BOOT9STRAP
-curl -LO https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip
-echo DOWNLOADING SAFEHAX.3DSX
+echo Downloading Boot9Strap
+curl -LO https://github.com/SciresM/Boot9Strap/releases/download/1.3/Boot9Strap-1.3.zip
+echo Downloading safehax.3dsx
 curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
-echo DOWNLOADING UDSPLOIT.3DSX
+echo Downloading udsploit.3dsx
 curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
-echo DOWNLOADING LUMA3DS
+echo Downloading Luma3DS
 curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
 cls
 color 0a
-echo THREEDEUS DOWNLOAD COMPLETE!
-echo YOU WILL NEED TO GET THE OTHERAPP PAYLOAD MANUALLY
-echo PRESS ANYTHING TO GOTO THE OTHERAPP PAYLOAD PAGE AND GUIDE
+echo ThreeDeus download complete!
+echo You will need to get otherapp.bin manually
+echo Press anything to open the otherapp generator and the guide.
 pause>null
 start "" https://smealum.github.io/3ds/#otherapp
 start "" https://3ds.guide/homebrew-launcher-(soundhax)
@@ -414,32 +415,32 @@ echo                                       `.-:/+osoo++//:://///++++++oooooo+//o
 echo                                               .-:/+ossoo++//://////+++///os`                       
 echo                                                      `.-:/+osso+++/::::/os`                        
 echo                                                              `.-:/+ossss+` 
-echo THREEDEUS FOR JPN BY JIJI
-echo PRESS ANYTHING TO START  
+echo ThreeDeus for JPN soundhax by jijipwn
+echo Press anything to start...  
 pause>null
 cls
-echo DOWNLOADING FILES, PLEASE WAIT...
-echo DOWNLOADING BOOT.3DSX
+echo Downloading files, please wait...
+echo Downloading boot.3dsx
 curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
-echo DOWNLOADING SOUNDHAX-JPN-N3DS.M4A
+echo Downloading soundhax-jpn-n3ds.m4a
 curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-jpn-n3ds.m4a
-echo DOWNLOADING SOUNDHAX-JPN-O3DS.M4A
+echo Downloading soundhax-jpn-o3ds.m4a
 curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-jpn-o3ds.m4a
-echo DOWNLOADING SAFEB9SINSTALLER
+echo Downloading SafeB9SInstaller
 curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
-echo DOWNLOADING BOOT9STRAP
-curl -LO https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip
-echo DOWNLOADING SAFEHAX.3DSX
+echo Downloading Boot9Strap
+curl -LO https://github.com/SciresM/Boot9Strap/releases/download/1.3/Boot9Strap-1.3.zip
+echo Downloading safehax.3dsx
 curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
-echo DOWNLOADING UDSPLOIT.3DSX
+echo Downloading udsploit.3dsx
 curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
-echo DOWNLOADING LUMA3DS
+echo Downloading Luma3DS
 curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
 cls
 color 0a
-echo THREEDEUS DOWNLOAD COMPLETE!
-echo YOU WILL NEED TO GET THE OTHERAPP PAYLOAD MANUALLY
-echo PRESS ANYTHING TO GOTO THE OTHERAPP PAYLOAD PAGE AND GUIDE
+echo ThreeDeus download complete!
+echo You will need to get otherapp.bin manually
+echo Press anything to open the otherapp generator and the guide.
 pause>null
 start "" https://smealum.github.io/3ds/#otherapp
 start "" https://3ds.guide/homebrew-launcher-(soundhax)
@@ -493,26 +494,26 @@ echo                                       `.-:/+osoo++//:://///++++++oooooo+//o
 echo                                               .-:/+ossoo++//://////+++///os`                       
 echo                                                      `.-:/+osso+++/::::/os`                        
 echo                                                              `.-:/+ossss+`
-echo THREEDEUS FOR NTRBOOTHAX BY JIJI
-echo PRESS ANYTHING TO START   
+echo ThreeDeus for ntrboothax by jijipwn
+echo Press anything to start...   
 pause>null
 cls
-echo DOWNLOADING FILES, PLEASE WAIT...
-echo DOWNLOADING DS_NTRBOOT_FLASHER.NDS
+echo Downloading files, please wait...
+echo Downloading ds_ntrboot_flasher.nds
 curl -LO https://github.com/ntrteam/ds_ntrboot_flasher/releases/download/v4.0/ds_ntrboot_flasher.nds
-echo DOWNLOADING DS_NTRBOOT_FLASHER_DSI.NDS
+echo Downloading ds_ntrboot_flasher_dsi.nds
 curl -LO https://github.com/ntrteam/ds_ntrboot_flasher/releases/download/v4.0/ds_ntrboot_flasher_dsi.nds
-echo DOWNLOADING NTRBOOT_FLASHER.FIRM
+echo Downloading ntrboot_flasher.firm
 curl -LO https://github.com/ntrteam/ntrboot_flasher/releases/download/v0.3.1/ntrboot_flasher.firm
-echo DOWNLOADING BOOT9STRAP-NTR
-curl -LO https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3-ntr.zip
+echo Downloading Boot9Strap-NTR
+curl -LO https://github.com/SciresM/Boot9Strap/releases/download/1.3/Boot9Strap-1.3-ntr.zip
 cls
 color 0a
-echo THREEDEUS DOWNLOAD COMPLETE!
-echo YOU WILL NEED TO READ THE GUIDE
-echo PRESS ANYTHING TO GOTO THE GUIDE
+echo ThreeDeus download complete!
+echo You will need to read the guide
+echo Press anything to open the guide
 pause>null
-start "" https://3ds.guide/installing-boot9strap-(ntrboot)
+start "" https://3ds.guide/installing-Boot9Strap-(ntrboot)
 goto home
 
 :b9s
@@ -563,42 +564,42 @@ echo                                       `.-:/+osoo++//:://///++++++oooooo+//o
 echo                                               .-:/+ossoo++//://////+++///os`                       
 echo                                                      `.-:/+osso+++/::::/os`                        
 echo                                                              `.-:/+ossss+`   
-echo THREEDEUS FOR FINALIZING SETUP BY JIJI
-echo PRESS ANYTHING TO START
+echo ThreeDeus for finalizing setup by jijipwn
+echo Press anything to start...
 pause>null
 cls
-echo DOWNLOADING FILES, PLEASE WAIT...
-echo DOWNLOADING BOOT.3DSX
+echo Downloading files, please wait...
+echo Downloading boot.3dsx
 curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
-echo DOWNLOADING SAFEB9SINSTALLER
+echo Downloading SafeB9SInstaller
 curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
-echo DOWNLOADING BOOT9STRAP
-curl -LO https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip
-echo DOWNLOADING LUMA3DS
+echo Downloading Boot9Strap
+curl -LO https://github.com/SciresM/Boot9Strap/releases/download/1.3/Boot9Strap-1.3.zip
+echo Downloading Luma3DS
 curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
-echo DOWNLOADING CLEANUP_SD_CARD.GM9
+echo Downloading cleanup_sd_card.gm9
 curl -LO https://3ds.guide/gm9_scripts/cleanup_sd_card.gm9
-echo DOWNLOADING SETUP_CTRNAND_LUMA3DS.GM9
+echo Downloading setup_ctrnand_Luma3DS.GM9
 curl -LO https://3ds.guide/gm9_scripts/setup_ctrnand_luma3ds.gm9
-echo DOWNLOADING ANEMONE3DS
+echo Downloading Anemone3DS
 curl -LO https://github.com/astronautlevel2/Anemone3DS/releases/download/v1.2.2/Anemone3DS.cia
-echo DOWNLOADING CHECKPOINT
+echo Downloading Checkpoint
 curl -LO https://github.com/BernardoGiordano/Checkpoint/releases/download/v2.0.2/Checkpoint.cia
-echo DOWNLOADING HBLAUNCHER_LOADER
+echo Downloading hblauncher_loader
 curl -LO https://github.com/yellows8/hblauncher_loader/releases/download/v1.3/hblauncher_loader_v1.3.zip
-echo DOWNLOADING LUMAUPDATER
+echo Downloading LumaUpdater
 curl -LO https://github.com/KunoichiZ/lumaupdate/releases/download/v2.2/lumaupdater.cia
-echo DOWNLOADING DSP1
+echo Downloading DSP1
 curl -LO https://github.com/zoogie/DSP1/releases/download/v1.0/DSP1.cia
-echo DOWNLOADING FBI
+echo Downloading FBI
 curl -LO https://github.com/Steveice10/FBI/releases/download/2.4.12/FBI.zip
-echo DOWNLOADING GODMODE9
+echo Downloading GodMode9
 curl -LO https://github.com/d0k3/GodMode9/releases/download/v1.4.3/GodMode9-v1.4.3-20171014100440.zip
 cls
 color 0a
-echo THREEDEUS DOWNLOAD COMPLETE!
-echo YOU WILL NEED TO READ THE GUIDE
-echo PRESS ANYTHING TO GOTO THE FINALIZING SETUP PAGE
+echo ThreeDeus download complete!
+echo You will need to read the guide
+echo Press anything to open the guide
 pause>null
 start "" https://3ds.guide/finalizing-setup
 goto home
@@ -651,32 +652,32 @@ echo                                       `.-:/+osoo++//:://///++++++oooooo+//o
 echo                                               .-:/+ossoo++//://////+++///os`                       
 echo                                                      `.-:/+osso+++/::::/os`                        
 echo                                                              `.-:/+ossss+`   
-echo THREEDEUS FOR KOR BY JIJI
-echo PRESS ANYTHING TO START
+echo ThreeDeus for KOR soundhax by jijipwn
+echo Press anything to start...
 pause>null
 cls
-echo DOWNLOADING FILES, PLEASE WAIT...
-echo DOWNLOADING BOOT.3DSX
+echo Downloading files, please wait...
+echo Downloading boot.3dsx
 curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
-echo DOWNLOADING SOUNDHAX-KOR-N3DS.M4A
+echo Downloading soundhax-kor-n3ds.m4a
 curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-kor-n3ds.m4a
-echo DOWNLOADING SOUNDHAX-KOR-O3DS.M4A
+echo Downloading soundhax-kor-o3ds.m4a
 curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-kor-o3ds.m4a
-echo DOWNLOADING SAFEB9SINSTALLER
+echo Downloading SafeB9SInstaller
 curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
-echo DOWNLOADING BOOT9STRAP
-curl -LO https://github.com/SciresM/boot9strap/releases/download/1.3/boot9strap-1.3.zip
-echo DOWNLOADING SAFEHAX.3DSX
+echo Downloading Boot9Strap
+curl -LO https://github.com/SciresM/Boot9Strap/releases/download/1.3/Boot9Strap-1.3.zip
+echo Downloading safehax.3dsx
 curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
-echo DOWNLOADING UDSPLOIT.3DSX
+echo Downloading udsploit.3dsx
 curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
-echo DOWNLOADING LUMA3DS
+echo Downloading Luma3DS
 curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
 cls
 color 0a
-echo THREEDEUS DOWNLOAD COMPLETE!
-echo YOU WILL NEED TO GET THE OTHERAPP PAYLOAD MANUALLY
-echo PRESS ANYTHING TO GOTO THE OTHERAPP PAYLOAD PAGE AND GUIDE
+echo ThreeDeus download complete!
+echo You will need to get otherapp.bin manually
+echo Press anything to open the otherapp generator and the guide.
 pause>null
 start "" https://smealum.github.io/3ds/#otherapp
 start "" https://3ds.guide/homebrew-launcher-(soundhax)
@@ -685,17 +686,17 @@ goto home
 :essentials
 color 0d
 cls
-echo DOWNLOADING FILES, PLEASE WAIT...
-echo DOWNLOADING FREESHOP
+echo Downloading files, please wait...
+echo Downloading FreeShop
 curl -LO https://get.freeshop.pw/latest  freeShop-latest.cia"
-echo DOWNLOADING PKSM
+echo Downloading PKSM
 curl -LO https://github.com/BernardoGiordano/PKSM/releases/download/4.5.0/PKSM.cia
-echo DOWNLOADING BOOTNTR-SELECTOR
+echo Downloading BootNTR-Selector
 curl -LO https://github.com/Nanquitas/BootNTR/releases/download/v.2.9/BootNTRSelector-PabloMK7-Banner.cia
 cls
 color 0a
-echo THREEDEUS DOWNLOAD COMPLETE!
-echo PRESS ANYTHING TO GO BACK TO HOME
+echo ThreeDeus download complete!
+echo Press anything to go back home
 pause>null
 goto home
 
@@ -741,40 +742,40 @@ echo                                   `````````.:/oyhhhhhhhhhhhhhhhhhhhhhy/   `
 echo                                             `    .:+syddhhhhhhhhhdhyy-``` `                         
 echo                                                 ``````.-/shhhhhhdhho.``````                         
 echo                                                          `..-/+oso:                                                                                                                                    
-echo THREEDEUS FOR UGOPWN USA BY JIJI
-echo PRESS ANYTHING TO START
+echo ThreeDeus for ugopwn in USA by jijipwn
+echo Press anything to start...
 pause>null
 cls
-echo DOWNLOADING FILES, PLEASE WAIT...
-echo DOWNLOADING UGOPWN
+echo Downloading files, please wait...
+echo Downloading ugopwn for USA
 curl -LO https://github.com/dsiguide/dsiguide.github.io/raw/master/files/ugopwn.zip
-echo FWTOOL MUST BE DOWNLOADED MANUALY
-start "" https://mega.nz/#!AzYlHQ4Q!Ok4krwUPXcvPC2f0tgC4W1PA_0SPnTMAVXUFP3GfM3c
-echo DOWNLOADING HXD
+echo Downloading fwtool
+megadl https://mega.nz/#!AzYlHQ4Q!Ok4krwUPXcvPC2f0tgC4W1PA_0SPnTMAVXUFP3GfM3c
+echo Downloading HXD
 curl -LO http://mh-nexus.de/downloads/HxDen.zip
-echo DOWNLOADING DSI SRL EXTRACT
+echo Downloading DSi SRL Extract
 curl -LO https://github.com/dsiguide/dsiguide.github.io/raw/master/files/dsi_srl_extract.zip
-echo NO$GBA MUST BE DOWNLOADED SEMI-MANUALLY
-start "" https://www.emuparadise.me/emulators/files/user/n-west-w-1776.zip
-echo CODES.TXT MUST BE DOWNLOADED MANUALLY
-start "" https://mega.nz/#!FuwTBDTA!H9k5xUYRa_dam6oHpBQNi-pxL4bA4uoGU3xd1ni34h4
-echo TWLTOOL MUST BE DOWNLOADED MANUALLY
-start "" https://mega.nz/#!sm4BWKoQ!KgHd58CzKknqmGQO2nicnn-JYcYixB9YZdqQz4Lm-Z8
-echo NUSDOWNLOADER (WITH DSIKEY.BIN GENERATOR) MUST BE DOWNLOADED MANUALLY
-start "" https://mega.nz/#!8mZEVTyZ!hMvqWmnjiylYEGAGHfaQOwfKSnQBJX1e5VfBgFJo0vw
-echo DOWNLOADING OSFMOUNT
+echo Downloading NO$GBA
+curl -LO https://www.emuparadise.me/emulators/files/user/n-west-w-1776.zip
+echo Downloading codes.txt
+megadl https://mega.nz/#!FuwTBDTA!H9k5xUYRa_dam6oHpBQNi-pxL4bA4uoGU3xd1ni34h4
+echo Downloading twltool
+megadl https://mega.nz/#!sm4BWKoQ!KgHd58CzKknqmGQO2nicnn-JYcYixB9YZdqQz4Lm-Z8
+echo Downloading NUSDownloader
+megadl https://mega.nz/#!8mZEVTyZ!hMvqWmnjiylYEGAGHfaQOwfKSnQBJX1e5VfBgFJo0vw
+echo Downloading OSFmount
 curl -LO https://www.osforensics.com/downloads/osfmount.exe
-echo DOWNLOADING DSI COMMON KEY BIN
+echo Downloading DSi Common Key Bin
 curl -LO https://dsiguide.me/files/DSiKeyGrabber.zip
-echo DSI BIOS MUST BE DOWNLOADED SEMI-MANUALLY
-start "" https://bit.ly/2z3XnaG
-echo DSI FOOTER TEMPLATE MUST BE DOWNLOADED SEMI-MANUALLY
-start "" https://bit.ly/2jrL8xO
+echo Downloading the DSi Bios
+curl -LO https://archive.org/download/DSiFirmwareFiles/DSi%20firmware%20files.zip
+echo Downloading DSi Footer Template
+curl -LO https://github.com/dsiguide/dsiguide.github.io/raw/master/files/dsi%20footer%20template.bin
 cls
 color 0a
-echo THREEDEUS DOWNLOAD COMPLETE!
-echo YOU NEED TO READ THE GUIDE
-echo PRESS ANYTHING TO OPEN THE GUIDE AND GO BACK TO HOME
+echo ThreeDeus download complete!
+echo You will need to read the guide
+echo Press anything to open the guide
 pause>null
 start "" https://dsiguide.me/downgrading
 goto home
@@ -804,39 +805,39 @@ echo                     `.-:/+syhdmmmmmmmmNmmNNmhNNNNNNNNmd++oyhddmmmmmmmmmmmmm
 echo                               `.-:/osyhdmNNNNNNNNNNmdo.....-/oshdmmmmdmmdhso/:..``                  
 echo                                          .-:/+ooo+/-....   ```..-:/os+/-.``                         
 echo                                                                    `                                
-echo THREEDEUS FOR WII U BY JIJI
-echo PRESS ANYTHING TO START
+echo ThreeDeus for Wii U by jijipwn
+echo Press anything to start...
 pause>null
-echo DOWNLOADING CONFIG.TXT
+echo Downloading Config.txt
 curl -LO https://wiiu.guide/images/config.txt  config.txt"
-echo DOWNLOADING HOMEBREW APP STORE
+echo Downloading Homebrew App Store
 curl -LO https://github.com/vgmoose/hbas/releases/download/1.5/appstore15.zip
-echo DOWNLOADING WUP INSTALLER GX2
+echo Downloading WUP Installer GX2
 curl -LO https://wiiubru.com/appstore/zips/wup_installer_gx2.zip
 curl -LO https://www.wiiubru.com/appstore/chan_zips/wup_installer_gx2.zip
-echo DOWNLOADING DISC2APP
+echo Downloading Disc2App
 curl -LO https://github.com/koolkdev/disc2app/releases/download/v1.0/disc2app.zip
-echo DOWNLOADING HID TO VPAD
+echo Downloading HID to VPAD
 curl -LO https://github.com/Maschell/hid_to_vpad/releases/download/v0.9j/hidtovpad-v0.9j.zip
-echo DOWNLOADING MOCHACFW
+echo Downloading MochaCFW
 curl -LO https://github.com/dimok789/mocha/releases/download/v0.2/mocha.v0.2.zip
-echo DOWNLOADING SAVEMII
+echo Downloading SaveMii
 curl -LO https://github.com/GabyPCgeeK/savemii/releases/download/1.2.0.mod5/savemii_mod5.zip
-echo DOWNLOADING HOMEBREW LAUNCHER CHANNEL
+echo Downloading Homebrew Launcher Channel
 curl -LO https://github.com/dimok789/homebrew_launcher/releases/download/v2.1/homebrew_launcher_channel.v2.1.zip
-echo DOWNLOADING HOMEBREW LAUNCHER
+echo Downloading Homebrew Launcher
 curl -LO https://github.com/dimok789/homebrew_launcher/releases/download/1.4/homebrew_launcher.v1.4.zip
-echo DOWNLOADING CBHC
+echo Downloading CBHC
 curl -LO https://github.com/FIX94/haxchi/releases/download/v2.5u2_v1.6/CBHC_v1.6.zip
-echo DOWNLOADING HAXCHI
+echo Downloading Haxchi
 curl -LO https://github.com/FIX94/haxchi/releases/download/v2.5u2_v1.6/Haxchi_v2.5u2.zip
-echo DOWNLOADING NNU-PATCHER
+echo Downloading NNU-PATCHER
 curl -LO https://wiiubru.com/appstore/zips/nnupatcher.zip
 cls
 color 0a
-echo THREEDEUS DOWNLOAD COMPLETE!
-echo YOU NEED TO READ THE GUIDE
-echo PRESS ANYTHING TO OPEN THE GUIDE AND GO HOME
+echo ThreeDeus download complete!
+echo You will need to read the guide
+echo Press anything to open the guide
 pause>null
 start "" https://wiiu.guide/get-started
 goto home
@@ -877,39 +878,40 @@ echo           `..-:/+ooss+-`          +mmhdy`           -/shmNNNNNdy+:`
 echo                   `.              yddyo++:    `-/oymNNNNNdy+:`        
 echo                                   -odhhhhyddmmmmmNNmhs/:`             
 echo                                     :syhdyyyyso+/-`   
-echo THREEDEUS FOR WII BY JIJI
-echo PRESS ANYTHING TO START
+echo ThreeDeus for Wii by jijipwn
+echo Press anything to start...
 pause>null
-echo LETTERBOMB MUST BE DOWNLOADED MANUALLY
+echo Letterbomb must be downloaded manually
 start "" https://please.hackmii.com/
-echo DOWNLOADING PRIILOADER
+echo Downloading PriiLoader
 curl -LO https://wii.guide/assets/files/Priiloader_v0_8_2.zip
-echo CIOS MUST BE DOWNLOADED MANUALLY
-start "" https://bit.ly/2mrZon5
-echo DOWNLOADING IOS PATCHER FOR RC24
+echo Downloading cIOS
+curl -LO https://sites.google.com/site/completesg/backup-launchers/installation/d2x-cIOS-Installer-Wii.zip
+echo Downloading IOS Patcher for RC24
 curl -LO https://github.com/RiiConnect24/IOS-Patcher/releases/download/v1.8.6/Windows.zip
-echo DOWNLOADING MAIL PATCHER FOR RC24
+echo Downloading Mail Patcher for RC24
 curl -LO https://github.com/RiiConnect24/RiiConnect24-Mail-Patcher-Windows/releases/download/v1.0.6/RiiConnect24-Mail-Patcher-Windows.zip
-echo DOWNLOADING WII MOD LITE
+echo Downloading Wii Mod Lite
 curl -LO https://github.com/RiiConnect24/Wii-Mod-Lite/releases/download/v1.7/WiiModLite_v1.7.zip
-echo WIIXPLORER MUST BE DOWNLOADED SEMI-MANUALLY
-start "" https://bit.ly/2zDZW2P
-echo DOWNLOADING WIIMMFI DISC PATCHER
+echo Downloading WiiXplorer
+curl -LO https://downloads.sourceforge.net/project/wiixplorer/R259.zip
+echo Downloading WiiMMfi
 curl -LO https://wii.guide/assets/files/autowiimmfipatcher0.4.zip
-echo USB LOADER GX MUST BE DOWNLOADED SEMI-MANUALLY
-start "" https://bit.ly/2hrD241
-echo DOWNLOADING WIIMMFI WIIWARE PATCHER
+echo Downloading USB Loader GX
+start "" http://download1323.mediafire.com/b78bppz87gtg/c9baa5xkwio0obw/R1188_IOS222-249-250.7z
+echo Downloading WiiMMfi Wiiware Patcher
 curl -LO https://github.com/RiiConnect24/auto-wiiware-patcher/releases/download/v2.1.4/Windows.zip
-echo DOWNLOADING WIIMMFI COMPETITION PATCHER
+echo Downloading WiiMMfi Competition Patcher
 curl -LO https://competitions.wiimmfi.de/competition-tool-wii.zip
 cls
 color 0a
-echo THREEDEUS DOWNLOAD COMPLETE!
-echo YOU NEED TO READ THE GUIDE
-echo PRESS ANYTHING TO OPEN THE GUIDE AND GO HOME
+echo ThreeDeus download complete!
+echo You will need to read the guide
+echo Press anything to open the guide
 pause>null
 start "" https://wii.guide/letterbomb
 goto home
 
-:wget
+:curl
+curl -LO 
 
