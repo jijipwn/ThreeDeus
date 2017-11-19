@@ -11,6 +11,8 @@ ThreeDeus does what it says above, It downloads the files needed for Homebrew fo
 
 ### Download:
 You can download ThreeDeus [here.](https://github.com/jijipwn/ThreeDeus/releases/latest)
+You can download the OSX port [here.](https://github.com/GithubPagesStuff/ThreeDeus)
+You can download the GUI version [here.](https://github.com/jijipwn/ThreeDeusGui/releases/latest)
 
 # FAQ:
 
