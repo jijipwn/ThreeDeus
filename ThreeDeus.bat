@@ -193,18 +193,18 @@ echo.
 echo Select A Guide:
 echo =============
 echo.
-echo 1) Open 3ds.guide
+echo 1) Open 3ds.hacks.guide
 echo 2) Open dev.3ds.guide
 echo 3) Open wii.guide
-echo 4) Open wiiu.guide
+echo 4) Open wiiu.hacks.guide
 echo 5) Open dsiguide.me
 echo 6) Go Back
 echo.                                                                                               
 set /p web=Type option:
-if "%web%"=="1" start "" https://3ds.guide
-if "%web%"=="2" start "" https://dev.3ds.guide
+if "%web%"=="1" start "" https://3ds.hacks.guide
+if "%web%"=="2" start "" https://dev.3ds.hacks.guide
 if "%web%"=="3" start "" https://wii.guide
-if "%web%"=="4" start "" https://wiiu.guide
+if "%web%"=="4" start "" https://wiiu.hacks.guide
 if "%web%"=="5" start "" https://dsiguide.me
 if "%web%"=="6" goto home
 goto guide
@@ -285,7 +285,7 @@ echo You will need to get otherapp.bin manually
 echo Press anything to open the otherapp generator and the guide.
 pause>null
 start "" https://smealum.github.io/3ds/#otherapp
-start "" https://3ds.guide/homebrew-launcher-(soundhax)
+start "" https://3ds.hacks.guide/homebrew-launcher-(soundhax)
 goto home
 
 :EUR
@@ -364,7 +364,7 @@ echo You will need to get otherapp.bin manually
 echo Press anything to open the otherapp generator and the guide.
 pause>null
 start "" https://smealum.github.io/3ds/#otherapp
-start "" https://3ds.guide/homebrew-launcher-(soundhax)
+start "" https://3ds.hacks.guide/homebrew-launcher-(soundhax)
 goto home
 
 :JPN
@@ -443,7 +443,7 @@ echo You will need to get otherapp.bin manually
 echo Press anything to open the otherapp generator and the guide.
 pause>null
 start "" https://smealum.github.io/3ds/#otherapp
-start "" https://3ds.guide/homebrew-launcher-(soundhax)
+start "" https://3ds.hacks.guide/homebrew-launcher-(soundhax)
 goto home
 
 :ntr
@@ -513,7 +513,7 @@ echo ThreeDeus download complete!
 echo You will need to read the guide
 echo Press anything to open the guide
 pause>null
-start "" https://3ds.guide/installing-Boot9Strap-(ntrboot)
+start "" https://3ds.hacks.guide/installing-Boot9Strap-(ntrboot)
 goto home
 
 :b9s
@@ -578,9 +578,9 @@ curl -LO https://github.com/SciresM/Boot9Strap/releases/download/1.3/Boot9Strap-
 echo Downloading Luma3DS
 curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
 echo Downloading cleanup_sd_card.gm9
-curl -LO https://3ds.guide/gm9_scripts/cleanup_sd_card.gm9
+curl -LO https://3ds.hacks.guide/gm9_scripts/cleanup_sd_card.gm9
 echo Downloading setup_ctrnand_Luma3DS.GM9
-curl -LO https://3ds.guide/gm9_scripts/setup_ctrnand_luma3ds.gm9
+curl -LO https://3ds.hacks.guide/gm9_scripts/setup_ctrnand_luma3ds.gm9
 echo Downloading Anemone3DS
 curl -LO https://github.com/astronautlevel2/Anemone3DS/releases/download/v1.2.2/Anemone3DS.cia
 echo Downloading Checkpoint
@@ -601,7 +601,7 @@ echo ThreeDeus download complete!
 echo You will need to read the guide
 echo Press anything to open the guide
 pause>null
-start "" https://3ds.guide/finalizing-setup
+start "" https://3ds.hacks.guide/finalizing-setup
 goto home
 
 :KOR
@@ -680,7 +680,7 @@ echo You will need to get otherapp.bin manually
 echo Press anything to open the otherapp generator and the guide.
 pause>null
 start "" https://smealum.github.io/3ds/#otherapp
-start "" https://3ds.guide/homebrew-launcher-(soundhax)
+start "" https://3ds.hacks.guide/homebrew-launcher-(soundhax)
 goto home
 
 :essentials
@@ -808,8 +808,9 @@ echo                                                                    `
 echo ThreeDeus for Wii U by jijipwn
 echo Press anything to start...
 pause>null
+echo Downloading files, please wait...
 echo Downloading Config.txt
-curl -LO https://wiiu.guide/images/config.txt  config.txt"
+curl -LO https://wiiu.hacks.guide/images/config.txt  config.txt"
 echo Downloading Homebrew App Store
 curl -LO https://github.com/vgmoose/hbas/releases/download/1.5/appstore15.zip
 echo Downloading WUP Installer GX2
@@ -839,7 +840,7 @@ echo ThreeDeus download complete!
 echo You will need to read the guide
 echo Press anything to open the guide
 pause>null
-start "" https://wiiu.guide/get-started
+start "" https://wiiu.hacks.guide/get-started
 goto home
 
 :wiimod
