@@ -1,4 +1,5 @@
 @echo off
+mode 1000
 goto home
 title ThreeDeus
 :home
