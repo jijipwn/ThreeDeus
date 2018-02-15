@@ -29,7 +29,7 @@ A: Of Course.
 A: Of Course!
 
 ### How do I use it?
-A: Just run the .bat file, simple
+A: Just run the .bat/py file, simple
 ### Note: you need cURL for it to work now, you can download it [here](https://curl.haxx.se/download.html)
 ### Note: you need mega-tools for it to work now, you can download it [here](https://megatools.megous.com/)
 
