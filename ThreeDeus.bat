@@ -278,6 +278,13 @@ if "%web%"=="3" goto KORHB
 if "%web%"=="4" goto 112
 goto ntsk
 
+:SED
+echo You need to use Seedminer:
+echo Press any key to open the thread.
+pause>null
+start "" https://gbatemp.net/threads/seedminer-single-system-dsiware-injection.495685/
+goto home
+
 :b9s
 cls
 color 0d
