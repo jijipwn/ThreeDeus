@@ -13,7 +13,7 @@ echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 88888
 echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
 echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
 echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
-echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 v4.0.1C
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 v5.0
 echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P' by jijipwn
 echo.
 echo Select a task:
@@ -33,150 +33,7 @@ if "%web%"=="3" goto WII
 if "%web%"=="4" goto DSI
 if "%web%"=="5" goto guide
 if "%web%"=="6" exit
-if "%web%"==";run;dev" goto debv
 goto home
-
-:3DS
-cls
-echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
-echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
-echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
-echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
-echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
-echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
-echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
-echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
-echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 for 3DS
-echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P' by jijipwn
-echo.
-echo Select a task:
-echo =============
-echo.
-echo 1) Download the 11.3 Soundhax [EUR]
-echo 2) Download the 11.3 Soundhax [USA]
-echo 3) Download the 11.3 Soundhax [JPN]
-echo 4) Download the 11.3 Soundhax [KOR]
-echo 5) Set up ntrboothax
-echo 6) Download the Final Essentials
-echo 7) Open the Guide
-echo 8) Go Back
-echo.                                                                                               
-set /p web=Type option:
-if "%web%"=="1" goto EUR
-if "%web%"=="2" goto USA
-if "%web%"=="3" goto JPN
-if "%web%"=="4" goto KOR
-if "%web%"=="5" goto ntr
-if "%web%"=="6" goto b9s
-if "%web%"=="7" goto guide
-if "%web%"=="8" goto home
-goto 3DS
-
-:WIIU
-cls
-echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
-echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
-echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
-echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
-echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
-echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
-echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
-echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
-echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 for Wii U
-echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P' by jijipwn
-echo.
-echo Select a task:
-echo =============
-echo.
-echo 1) Open The Guide
-echo 2) Download the Wii U Mod Kit
-echo 3) Go Back
-echo.                                                                                               
-set /p web=Type option:
-if "%web%"=="1" goto guide
-if "%web%"=="2" goto wiiumod
-if "%web%"=="3" goto home
-goto WIIU
-
-:debv
-cls
-echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
-echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
-echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
-echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
-echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
-echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
-echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
-echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
-echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 developer menu
-echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P' by jijipwn
-echo.
-echo Select a task:
-echo =============
-echo.
-echo 1) Download the Essentials Pack
-echo 2) Go Back
-echo 3) Test mega-tools
-echo 4) Test cURL
-echo.                                                                                               
-set /p web=Type option:
-if "%web%"=="1" goto essentials
-if "%web%"=="2" goto home
-if "%web%"=="3" goto mega-tools
-if "%web%"=="4" goto curl
-goto debv
-
-:WII
-cls
-echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
-echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
-echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
-echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
-echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
-echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
-echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
-echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
-echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 for Wii
-echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P' by jijipwn
-echo.
-echo Select a task:
-echo =============
-echo.
-echo 1) Open The Guide
-echo 2) Download the Wii Mod Kit
-echo 3) Go Back
-echo.                                                                                               
-set /p web=Type option:
-if "%web%"=="1" goto guide
-if "%web%"=="2" goto wiimod
-if "%web%"=="3" goto home
-goto WII
-
-:DSI
-cls
-echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
-echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
-echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
-echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
-echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
-echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
-echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
-echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
-echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 for DSi
-echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P' by jijipwn
-echo.
-echo Select a task:
-echo =============
-echo.
-echo 1) Open The Guide
-echo 2) Download Downgrade Pack [Ugopwn USA]
-echo 3) Go Back
-echo.                                                                                               
-set /p web=Type option:
-if "%web%"=="1" goto guide
-if "%web%"=="2" goto ugousa
-if "%web%"=="3" goto home
-goto DSI
 
 :guide
 cls
@@ -210,7 +67,383 @@ if "%web%"=="5" start "" https://dsiguide.me
 if "%web%"=="6" goto home
 goto guide
 
-:USA
+:3DS
+color 0c
+cls                                                                                                                                                  
+echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
+echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
+echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
+echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
+echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
+echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
+echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
+echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 3DS
+echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P'
+echo.
+echo Select your version:
+echo =============
+echo.
+echo 1) 9.0.0 - 11.3
+echo 2) 11.4 - Latest
+echo 3) Other
+echo 4) Go Back
+echo.                                                                                               
+set /p web=Type option:
+if "%web%"=="1" goto 112
+if "%web%"=="2" goto 114
+if "%web%"=="3" goto 910
+if "%web%"=="4" goto home
+goto 3DS
+
+:112
+color 0c
+cls                                                                                                                                                  
+echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
+echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
+echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
+echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
+echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
+echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
+echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
+echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 3DS
+echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P'
+echo.
+echo Select your region:
+echo =============
+echo.
+echo 1) Europe/Australia
+echo 2) America
+echo 3) Japan
+echo 4) Korea
+echo 5) Go Back
+echo.                                                                                               
+set /p web=Type option:
+if "%web%"=="1" goto pal
+if "%web%"=="2" goto ntsu
+if "%web%"=="3" goto ntsj
+if "%web%"=="4" goto ntsk
+if "%web%"=="5" goto 3DS
+goto 112
+
+:910
+cls
+echo You need to goto the getting started page:
+echo Press any key to open the getting started page.
+pause>null
+start "" https://3ds.hacks.guide/get-started
+goto home
+
+:114
+color 0c
+cls                                                                                                                                                  
+echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
+echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
+echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
+echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
+echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
+echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
+echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
+echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 3DS
+echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P'
+echo.
+echo Select a task:
+echo =============
+echo.
+echo 1) I have a flashcart
+echo 2) I don't have a flashcart
+echo 3) Go Back
+echo.                                                                                               
+set /p web=Type option:
+if "%web%"=="1" goto ntr
+if "%web%"=="2" goto SED
+if "%web%"=="3" goto 3DS
+goto 114
+
+:pal
+color 0c
+cls                                                                                                                                                  
+echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
+echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
+echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
+echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
+echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
+echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
+echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
+echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 3DS
+echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P'
+echo.
+echo Select a task:
+echo =============
+echo.
+echo 1) I have Custom Firmware and I need to finalize setup.
+echo 2) I don't have Custom Firmware but I want it.
+echo 3) I don't have Custom Firmware and I don't want it.
+echo 4) Go Back
+echo.                                                                                               
+set /p web=Type option:
+if "%web%"=="1" goto b9s
+if "%web%"=="2" goto EURCFW
+if "%web%"=="3" goto EURHB
+if "%web%"=="4" goto 112
+goto pal
+
+:ntsu
+color 0c
+cls                                                                                                                                                  
+echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
+echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
+echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
+echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
+echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
+echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
+echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
+echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 3DS
+echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P'
+echo.
+echo Select a task:
+echo =============
+echo.
+echo 1) I have Custom Firmware and I need to finalize setup.
+echo 2) I don't have Custom Firmware but I want it.
+echo 3) I don't have Custom Firmware and I don't want it.
+echo 4) Go Back
+echo.                                                                                               
+set /p web=Type option:
+if "%web%"=="1" goto b9s
+if "%web%"=="2" goto USACFW
+if "%web%"=="3" goto USAHB
+if "%web%"=="4" goto 112
+goto ntsu
+
+:nstj
+color 0c
+cls                                                                                                                                                  
+echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
+echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
+echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
+echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
+echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
+echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
+echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
+echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 3DS
+echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P'
+echo.
+echo Select a task:
+echo =============
+echo.
+echo 1) I have Custom Firmware and I need to finalize setup.
+echo 2) I don't have Custom Firmware but I want it.
+echo 3) I don't have Custom Firmware and I don't want it.
+echo 4) Go Back
+echo.                                                                                               
+set /p web=Type option:
+if "%web%"=="1" goto b9s
+if "%web%"=="2" goto JPNCFW
+if "%web%"=="3" goto JPNHB
+if "%web%"=="4" goto 112
+goto ntsj
+
+:nstk
+color 0c
+cls                                                                                                                                                  
+echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
+echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
+echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
+echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
+echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
+echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
+echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
+echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 3DS
+echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P'
+echo.
+echo Select a task:
+echo =============
+echo.
+echo 1) I have Custom Firmware and I need to finalize setup.
+echo 2) I don't have Custom Firmware but I want it.
+echo 3) I don't have Custom Firmware and I don't want it.
+echo 4) Go Back
+echo.                                                                                               
+set /p web=Type option:
+if "%web%"=="1" goto b9s
+if "%web%"=="2" goto KORCFW
+if "%web%"=="3" goto KORHB
+if "%web%"=="4" goto 112
+goto ntsk
+
+:b9s
+cls
+color 0d
+echo                            `:--.------...``                                                         
+echo                           .:`........`....-------...`                                               
+echo                          `/. ..................```....-----...``  
+echo                          /. ..............................``....-----...`` 
+echo                         :.`.............::--.................::-...````...-----...``
+echo                        .-`.............+hhhhysso+/::-........--..............````....-......`       
+echo                       `:`............./hhhhhhhhhhhhhhyyso++/:--........................````.....-.`    
+echo                       /`.............-yhhhhhhhhhhhhhhhhhhhhhhhhyyso+//:--.......................``:+        
+echo                      :.`.............shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyyso+//:-...............`.- 
+echo                     --`.............+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs..............``.-     
+echo                    .:`.............:yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh:.............``.-`
+echo                    :`.............-yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh+..............`.-- 
+echo                   :``.............shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs..............``--  
+echo                  -.`.............+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy-......`......``.-.  
+echo                 .-`.............:yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh/.....`........``-:   
+echo                `:`.............-yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs.......`......``-:    
+echo                .+-::----.......ohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy-..............`.-.    
+echo               +:/+ooo+//::----.::/+osyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh/..............:.--     
+echo               //---::://+++++++//:::::::::/+osyyhhhhhhhhhhhhhhhhhhhhhhhhhhho.............o//-:`     
+echo               .o:---..`....--::/+++++++++/:::----://+osyhhhhhhhhhhhhhhhhhhy.............--`.-.      
+echo              .so+//::--.....`````..---::/++++++++///:::--::/++osyhhhhhhhhy:.............. `-:       
+echo             -sooo++++++++//::-::--..``````..--:://+++++++////:::--::/+oos+..........``````.:`       
+echo            :so+/+ssyyso+/oooo++/sso+/::---...``````..--:://+++++++++++///:-.......```````.-.        
+echo           /so/+yhhhhhhyoo/ooo++dmmmdmddhyso++/:----..```````..--::/++++++++/////:--....``-:         
+echo          +so/+shhhhhhho/o+oo++dmmmmmmmmmmdddddddysso+/::---..```````..--::////+++++/::-`.:`         
+echo        `osooooooosso+::++o++odmmmdddddddddddddddddddddddhyso+//:---.```````....--::////+            
+echo       `ooooooo+++///++ooo++oddmdddddddddddddddddddddddddddddddddhs+:-::---............-+.           
+echo      .oooooooooooooooooo++sdddddddddddddddddddddddddddddddddddddy+/-+++++++//:::::-----/:           
+echo     -soooooooso/+ooooooo/sdddddddddddddddddddddddddddddddddddddy+/-+ooo++ooo+++++++//::s-           
+echo    -soooosooooo+o+ooooo/ydddddddddddddddddddddddddddddddddddddh+/-+oooo+/os+:+++++++//s+            
+echo   :oooo+//oss+os/:oooo/ydddddddddddddddddddddddddddddddddddddh+/-++oso/++/::+++++++/:oo             
+echo  :ooooooo+oo-++//ooo+/ydddddddddddddddddddddddddddddddddddddh+/-++/:::/++++oyyo/++/:os              
+echo /oooooooo++/+oooooo+/hdddddddddddddddddddddddddddddddddddddh+/-++++++oss+++/:::++/:+s`             
+echo +oooooooooooooooo++oosyhhdddddddddddddddddddddddddddddddddh+/-+++++++/o+:/++++++//oy.               
+echo :+///+++oooooooo++oooooooooossyhhddddddddddddddddddddddddh+/-+o+++++o+//++++o+++/+y.                
+echo  -soo++//////++////++ossssoooo++o+oosyyhhdddddddddddddddho/:+ooooo++++++ooooo++/+y-                 
+echo    .-:/+osoo++////:::::://+++oooshssoo++++oosyyhdddddddho/:+ooooooooo+oooooo++/+s:                  
+echo           `-:/+osoo++//:::::::://++ossooooooo+++++oosyyo/:+ooooooooooooo+oo++//s/                   
+echo                  `-:/+osoo++//::::::::://+++osssso++++++-/ooo+oooo+++oooooo+//s+                  
+echo                         `.-:/+oso/.-:/:::::-::://++++++-/++o++sooo+ooooooo+//s+                     
+echo                                 .-::/osoo++//:::::--:::/+++/++ooss+o+oooo+//so       
+echo                                       `.-:/+osoo++//:://///++++++oooooo+//os                    
+echo                                               .-:/+ossoo++//://////+++///os`                       
+echo                                                      `.-:/+osso+++/::::/os`                        
+echo                                                              `.-:/+ossss+`   
+echo ThreeDeus for finalizing setup by jijipwn
+echo Press anything to start...
+pause>null
+cls
+echo Downloading files, please wait...
+echo Downloading boot.3dsx
+curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
+echo Downloading SafeB9SInstaller
+curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
+echo Downloading Boot9Strap
+curl -LO https://github.com/SciresM/Boot9Strap/releases/download/1.3/Boot9Strap-1.3.zip
+echo Downloading Luma3DS
+curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v9.0/Luma3DSv9.0.7z
+echo Downloading cleanup_sd_card.gm9
+curl -LO https://3ds.hacks.guide/gm9_scripts/cleanup_sd_card.gm9
+echo Downloading setup_ctrnand_Luma3DS.GM9
+curl -LO https://3ds.hacks.guide/gm9_scripts/setup_ctrnand_luma3ds.gm9
+echo Downloading Anemone3DS
+curl -LO https://github.com/astronautlevel2/Anemone3DS/releases/download/v1.3.0/Anemone3DS.cia
+echo Downloading Checkpoint
+curl -LO https://github.com/BernardoGiordano/Checkpoint/releases/download/v3.0.0/Checkpoint.cia
+echo Downloading hblauncher_loader
+curl -LO https://github.com/yellows8/hblauncher_loader/releases/download/v1.3/hblauncher_loader_v1.3.zip
+echo Downloading DSP1
+curl -LO https://github.com/zoogie/DSP1/releases/download/v1.0/DSP1.cia
+echo Downloading FBI
+curl -LO https://github.com/Steveice10/FBI/releases/download/2.4.14/FBI.zip
+echo Downloading GodMode9
+curl -LO https://github.com/d0k3/GodMode9/releases/download/v1.5.1/GodMode9-v1.5.1-20180102013100.zip
+cls
+color 0a
+echo ThreeDeus download complete!
+echo You will need to read the guide
+echo Press anything to open the guide
+pause>null
+start "" https://3ds.hacks.guide/finalizing-setup
+goto home
+
+:KORCFW
+cls
+color 0d
+echo                            `:--.------...``                                                         
+echo                           .:`........`....-------...`                                               
+echo                          `/. ..................```....-----...``  
+echo                          /. ..............................``....-----...`` 
+echo                         :.`.............::--.................::-...````...-----...``
+echo                        .-`.............+hhhhysso+/::-........--..............````....-......`       
+echo                       `:`............./hhhhhhhhhhhhhhyyso++/:--........................````.....-.`    
+echo                       /`.............-yhhhhhhhhhhhhhhhhhhhhhhhhyyso+//:--.......................``:+        
+echo                      :.`.............shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyyso+//:-...............`.- 
+echo                     --`.............+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs..............``.-     
+echo                    .:`.............:yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh:.............``.-`
+echo                    :`.............-yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh+..............`.-- 
+echo                   :``.............shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs..............``--  
+echo                  -.`.............+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy-......`......``.-.  
+echo                 .-`.............:yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh/.....`........``-:   
+echo                `:`.............-yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs.......`......``-:    
+echo                .+-::----.......ohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy-..............`.-.    
+echo               +:/+ooo+//::----.::/+osyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh/..............:.--     
+echo               //---::://+++++++//:::::::::/+osyyhhhhhhhhhhhhhhhhhhhhhhhhhhho.............o//-:`     
+echo               .o:---..`....--::/+++++++++/:::----://+osyhhhhhhhhhhhhhhhhhhy.............--`.-.      
+echo              .so+//::--.....`````..---::/++++++++///:::--::/++osyhhhhhhhhy:.............. `-:       
+echo             -sooo++++++++//::-::--..``````..--:://+++++++////:::--::/+oos+..........``````.:`       
+echo            :so+/+ssyyso+/oooo++/sso+/::---...``````..--:://+++++++++++///:-.......```````.-.        
+echo           /so/+yhhhhhhyoo/ooo++dmmmdmddhyso++/:----..```````..--::/++++++++/////:--....``-:         
+echo          +so/+shhhhhhho/o+oo++dmmmmmmmmmmdddddddysso+/::---..```````..--::////+++++/::-`.:`         
+echo        `osooooooosso+::++o++odmmmdddddddddddddddddddddddhyso+//:---.```````....--::////+            
+echo       `ooooooo+++///++ooo++oddmdddddddddddddddddddddddddddddddddhs+:-::---............-+.           
+echo      .oooooooooooooooooo++sdddddddddddddddddddddddddddddddddddddy+/-+++++++//:::::-----/:           
+echo     -soooooooso/+ooooooo/sdddddddddddddddddddddddddddddddddddddy+/-+ooo++ooo+++++++//::s-           
+echo    -soooosooooo+o+ooooo/ydddddddddddddddddddddddddddddddddddddh+/-+oooo+/os+:+++++++//s+            
+echo   :oooo+//oss+os/:oooo/ydddddddddddddddddddddddddddddddddddddh+/-++oso/++/::+++++++/:oo             
+echo  :ooooooo+oo-++//ooo+/ydddddddddddddddddddddddddddddddddddddh+/-++/:::/++++oyyo/++/:os              
+echo /oooooooo++/+oooooo+/hdddddddddddddddddddddddddddddddddddddh+/-++++++oss+++/:::++/:+s`             
+echo +oooooooooooooooo++oosyhhdddddddddddddddddddddddddddddddddh+/-+++++++/o+:/++++++//oy.               
+echo :+///+++oooooooo++oooooooooossyhhddddddddddddddddddddddddh+/-+o+++++o+//++++o+++/+y.                
+echo  -soo++//////++////++ossssoooo++o+oosyyhhdddddddddddddddho/:+ooooo++++++ooooo++/+y-                 
+echo    .-:/+osoo++////:::::://+++oooshssoo++++oosyyhdddddddho/:+ooooooooo+oooooo++/+s:                  
+echo           `-:/+osoo++//:::::::://++ossooooooo+++++oosyyo/:+ooooooooooooo+oo++//s/                   
+echo                  `-:/+osoo++//::::::::://+++osssso++++++-/ooo+oooo+++oooooo+//s+                  
+echo                         `.-:/+oso/.-:/:::::-::://++++++-/++o++sooo+ooooooo+//s+                     
+echo                                 .-::/osoo++//:::::--:::/+++/++ooss+o+oooo+//so       
+echo                                       `.-:/+osoo++//:://///++++++oooooo+//os                    
+echo                                               .-:/+ossoo++//://////+++///os`                       
+echo                                                      `.-:/+osso+++/::::/os`                        
+echo                                                              `.-:/+ossss+`   
+echo ThreeDeus for KOR soundhax by jijipwn
+echo Press anything to start...
+pause>null
+cls
+echo Downloading files, please wait...
+echo Downloading boot.3dsx
+curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
+echo Downloading soundhax-kor-n3ds.m4a
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-kor-n3ds.m4a
+echo Downloading soundhax-kor-o3ds.m4a
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-kor-o3ds.m4a
+echo Downloading SafeB9SInstaller
+curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
+echo Downloading Boot9Strap
+curl -LO https://github.com/SciresM/Boot9Strap/releases/download/1.3/Boot9Strap-1.3.zip
+echo Downloading safehax.3dsx
+curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
+echo Downloading udsploit.3dsx
+curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
+echo Downloading Luma3DS
+curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v9.0/Luma3DSv9.0.7z
+cls
+color 0a
+echo ThreeDeus download complete!
+echo You will need to get otherapp.bin manually
+echo Press anything to open the otherapp generator and the guide.
+pause>null
+start "" https://smealum.github.io/3ds/#otherapp
+start "" https://3ds.hacks.guide/homebrew-launcher-(soundhax)
+goto home
+
+:USACFW
 cls
 color 0d
 echo                            `:--.------...``                                                         
@@ -278,7 +511,7 @@ curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
 echo Downloading udsploit.3dsx
 curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
 echo Downloading Luma3DS
-curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
+curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v9.0/Luma3DSv9.0.7z
 cls
 color 0a
 echo ThreeDeus download complete!
@@ -289,7 +522,7 @@ start "" https://smealum.github.io/3ds/#otherapp
 start "" https://3ds.hacks.guide/homebrew-launcher-(soundhax)
 goto home
 
-:EUR
+:EURCFW
 cls
 color 0d
 echo                            `:--.------...``                                                         
@@ -357,7 +590,7 @@ curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
 echo Downloading udsploit.3dsx
 curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
 echo Downloading Luma3DS
-curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
+curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v9.0/Luma3DSv9.0.7z
 cls
 color 0a
 echo ThreeDeus download complete!
@@ -368,7 +601,7 @@ start "" https://smealum.github.io/3ds/#otherapp
 start "" https://3ds.hacks.guide/homebrew-launcher-(soundhax)
 goto home
 
-:JPN
+:JPNCFW
 cls
 color 0d
 echo                            `:--.------...``                                                         
@@ -436,7 +669,7 @@ curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
 echo Downloading udsploit.3dsx
 curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
 echo Downloading Luma3DS
-curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
+curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v9.0/Luma3DSv9.0.7z
 cls
 color 0a
 echo ThreeDeus download complete!
@@ -517,7 +750,7 @@ pause>null
 start "" https://3ds.hacks.guide/installing-Boot9Strap-(ntrboot)
 goto home
 
-:b9s
+:USAHB
 cls
 color 0d
 echo                            `:--.------...``                                                         
@@ -564,48 +797,167 @@ echo                                 .-::/osoo++//:::::--:::/+++/++ooss+o+oooo+/
 echo                                       `.-:/+osoo++//:://///++++++oooooo+//os                    
 echo                                               .-:/+ossoo++//://////+++///os`                       
 echo                                                      `.-:/+osso+++/::::/os`                        
-echo                                                              `.-:/+ossss+`   
-echo ThreeDeus for finalizing setup by jijipwn
-echo Press anything to start...
+echo                                                              `.-:/+ossss+`
+echo ThreeDeus for USA Soundhax by jijipwn
+echo Press anything to start......  
 pause>null
 cls
 echo Downloading files, please wait...
 echo Downloading boot.3dsx
 curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
-echo Downloading SafeB9SInstaller
-curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
-echo Downloading Boot9Strap
-curl -LO https://github.com/SciresM/Boot9Strap/releases/download/1.3/Boot9Strap-1.3.zip
-echo Downloading Luma3DS
-curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
-echo Downloading cleanup_sd_card.gm9
-curl -LO https://3ds.hacks.guide/gm9_scripts/cleanup_sd_card.gm9
-echo Downloading setup_ctrnand_Luma3DS.GM9
-curl -LO https://3ds.hacks.guide/gm9_scripts/setup_ctrnand_luma3ds.gm9
-echo Downloading Anemone3DS
-curl -LO https://github.com/astronautlevel2/Anemone3DS/releases/download/v1.2.2/Anemone3DS.cia
-echo Downloading Checkpoint
-curl -LO https://github.com/BernardoGiordano/Checkpoint/releases/download/v2.0.2/Checkpoint.cia
-echo Downloading hblauncher_loader
-curl -LO https://github.com/yellows8/hblauncher_loader/releases/download/v1.3/hblauncher_loader_v1.3.zip
-echo Downloading LumaUpdater
-curl -LO https://github.com/KunoichiZ/lumaupdate/releases/download/v2.2/lumaupdater.cia
-echo Downloading DSP1
-curl -LO https://github.com/zoogie/DSP1/releases/download/v1.0/DSP1.cia
-echo Downloading FBI
-curl -LO https://github.com/Steveice10/FBI/releases/download/2.4.12/FBI.zip
-echo Downloading GodMode9
-curl -LO https://github.com/d0k3/GodMode9/releases/download/v1.4.3/GodMode9-v1.4.3-20171014100440.zip
+echo Downloading soundhax-usa-n3ds.m4a
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-usa-n3ds.m4a
+echo Downloading soundhax-usa-o3ds.m4a
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-usa-o3ds.m4a
 cls
 color 0a
 echo ThreeDeus download complete!
-echo You will need to read the guide
-echo Press anything to open the guide
+echo You will need to get otherapp.bin manually
+echo Press anything to open the otherapp generator and the guide.
 pause>null
-start "" https://3ds.hacks.guide/finalizing-setup
+start "" https://smealum.github.io/3ds/#otherapp
+start "" https://3ds.hacks.guide/homebrew-launcher-(soundhax)
 goto home
 
-:KOR
+:EURHB
+cls
+color 0d
+echo                            `:--.------...``                                                         
+echo                           .:`........`....-------...`                                               
+echo                          `/. ..................```....-----...``  
+echo                          /. ..............................``....-----...`` 
+echo                         :.`.............::--.................::-...````...-----...``
+echo                        .-`.............+hhhhysso+/::-........--..............````....-......`       
+echo                       `:`............./hhhhhhhhhhhhhhyyso++/:--........................````.....-.`    
+echo                       /`.............-yhhhhhhhhhhhhhhhhhhhhhhhhyyso+//:--.......................``:+        
+echo                      :.`.............shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyyso+//:-...............`.- 
+echo                     --`.............+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs..............``.-     
+echo                    .:`.............:yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh:.............``.-`
+echo                    :`.............-yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh+..............`.-- 
+echo                   :``.............shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs..............``--  
+echo                  -.`.............+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy-......`......``.-.  
+echo                 .-`.............:yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh/.....`........``-:   
+echo                `:`.............-yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs.......`......``-:    
+echo                .+-::----.......ohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy-..............`.-.    
+echo               +:/+ooo+//::----.::/+osyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh/..............:.--     
+echo               //---::://+++++++//:::::::::/+osyyhhhhhhhhhhhhhhhhhhhhhhhhhhho.............o//-:`     
+echo               .o:---..`....--::/+++++++++/:::----://+osyhhhhhhhhhhhhhhhhhhy.............--`.-.      
+echo              .so+//::--.....`````..---::/++++++++///:::--::/++osyhhhhhhhhy:.............. `-:       
+echo             -sooo++++++++//::-::--..``````..--:://+++++++////:::--::/+oos+..........``````.:`       
+echo            :so+/+ssyyso+/oooo++/sso+/::---...``````..--:://+++++++++++///:-.......```````.-.        
+echo           /so/+yhhhhhhyoo/ooo++dmmmdmddhyso++/:----..```````..--::/++++++++/////:--....``-:         
+echo          +so/+shhhhhhho/o+oo++dmmmmmmmmmmdddddddysso+/::---..```````..--::////+++++/::-`.:`         
+echo        `osooooooosso+::++o++odmmmdddddddddddddddddddddddhyso+//:---.```````....--::////+            
+echo       `ooooooo+++///++ooo++oddmdddddddddddddddddddddddddddddddddhs+:-::---............-+.           
+echo      .oooooooooooooooooo++sdddddddddddddddddddddddddddddddddddddy+/-+++++++//:::::-----/:           
+echo     -soooooooso/+ooooooo/sdddddddddddddddddddddddddddddddddddddy+/-+ooo++ooo+++++++//::s-           
+echo    -soooosooooo+o+ooooo/ydddddddddddddddddddddddddddddddddddddh+/-+oooo+/os+:+++++++//s+            
+echo   :oooo+//oss+os/:oooo/ydddddddddddddddddddddddddddddddddddddh+/-++oso/++/::+++++++/:oo             
+echo  :ooooooo+oo-++//ooo+/ydddddddddddddddddddddddddddddddddddddh+/-++/:::/++++oyyo/++/:os              
+echo /oooooooo++/+oooooo+/hdddddddddddddddddddddddddddddddddddddh+/-++++++oss+++/:::++/:+s`             
+echo +oooooooooooooooo++oosyhhdddddddddddddddddddddddddddddddddh+/-+++++++/o+:/++++++//oy.               
+echo :+///+++oooooooo++oooooooooossyhhddddddddddddddddddddddddh+/-+o+++++o+//++++o+++/+y.                
+echo  -soo++//////++////++ossssoooo++o+oosyyhhdddddddddddddddho/:+ooooo++++++ooooo++/+y-                 
+echo    .-:/+osoo++////:::::://+++oooshssoo++++oosyyhdddddddho/:+ooooooooo+oooooo++/+s:                  
+echo           `-:/+osoo++//:::::::://++ossooooooo+++++oosyyo/:+ooooooooooooo+oo++//s/                   
+echo                  `-:/+osoo++//::::::::://+++osssso++++++-/ooo+oooo+++oooooo+//s+                  
+echo                         `.-:/+oso/.-:/:::::-::://++++++-/++o++sooo+ooooooo+//s+                     
+echo                                 .-::/osoo++//:::::--:::/+++/++ooss+o+oooo+//so       
+echo                                       `.-:/+osoo++//:://///++++++oooooo+//os                    
+echo                                               .-:/+ossoo++//://////+++///os`                       
+echo                                                      `.-:/+osso+++/::::/os`                        
+echo                                                              `.-:/+ossss+` 
+echo ThreeDeus for EUR soundhax by jijipwn
+echo Press anything to start...  
+pause>null
+cls
+echo Downloading files, please wait...
+echo Downloading boot.3dsx
+curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
+echo Downloading soundhax-eur-n3ds.m4a
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-eur-n3ds.m4a
+echo Downloading soundhax-eur-o3ds.m4a
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-eur-o3ds.m4a
+cls
+color 0a
+echo ThreeDeus download complete!
+echo You will need to get otherapp.bin manually
+echo Press anything to open the otherapp generator and the guide.
+pause>null
+start "" https://smealum.github.io/3ds/#otherapp
+start "" https://3ds.hacks.guide/homebrew-launcher-(soundhax)
+goto home
+
+:JPNHB
+cls
+color 0d
+echo                            `:--.------...``                                                         
+echo                           .:`........`....-------...`                                               
+echo                          `/. ..................```....-----...``  
+echo                          /. ..............................``....-----...`` 
+echo                         :.`.............::--.................::-...````...-----...``
+echo                        .-`.............+hhhhysso+/::-........--..............````....-......`       
+echo                       `:`............./hhhhhhhhhhhhhhyyso++/:--........................````.....-.`    
+echo                       /`.............-yhhhhhhhhhhhhhhhhhhhhhhhhyyso+//:--.......................``:+        
+echo                      :.`.............shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyyso+//:-...............`.- 
+echo                     --`.............+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs..............``.-     
+echo                    .:`.............:yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh:.............``.-`
+echo                    :`.............-yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh+..............`.-- 
+echo                   :``.............shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs..............``--  
+echo                  -.`.............+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy-......`......``.-.  
+echo                 .-`.............:yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh/.....`........``-:   
+echo                `:`.............-yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs.......`......``-:    
+echo                .+-::----.......ohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy-..............`.-.    
+echo               +:/+ooo+//::----.::/+osyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh/..............:.--     
+echo               //---::://+++++++//:::::::::/+osyyhhhhhhhhhhhhhhhhhhhhhhhhhhho.............o//-:`     
+echo               .o:---..`....--::/+++++++++/:::----://+osyhhhhhhhhhhhhhhhhhhy.............--`.-.      
+echo              .so+//::--.....`````..---::/++++++++///:::--::/++osyhhhhhhhhy:.............. `-:       
+echo             -sooo++++++++//::-::--..``````..--:://+++++++////:::--::/+oos+..........``````.:`       
+echo            :so+/+ssyyso+/oooo++/sso+/::---...``````..--:://+++++++++++///:-.......```````.-.        
+echo           /so/+yhhhhhhyoo/ooo++dmmmdmddhyso++/:----..```````..--::/++++++++/////:--....``-:         
+echo          +so/+shhhhhhho/o+oo++dmmmmmmmmmmdddddddysso+/::---..```````..--::////+++++/::-`.:`         
+echo        `osooooooosso+::++o++odmmmdddddddddddddddddddddddhyso+//:---.```````....--::////+            
+echo       `ooooooo+++///++ooo++oddmdddddddddddddddddddddddddddddddddhs+:-::---............-+.           
+echo      .oooooooooooooooooo++sdddddddddddddddddddddddddddddddddddddy+/-+++++++//:::::-----/:           
+echo     -soooooooso/+ooooooo/sdddddddddddddddddddddddddddddddddddddy+/-+ooo++ooo+++++++//::s-           
+echo    -soooosooooo+o+ooooo/ydddddddddddddddddddddddddddddddddddddh+/-+oooo+/os+:+++++++//s+            
+echo   :oooo+//oss+os/:oooo/ydddddddddddddddddddddddddddddddddddddh+/-++oso/++/::+++++++/:oo             
+echo  :ooooooo+oo-++//ooo+/ydddddddddddddddddddddddddddddddddddddh+/-++/:::/++++oyyo/++/:os              
+echo /oooooooo++/+oooooo+/hdddddddddddddddddddddddddddddddddddddh+/-++++++oss+++/:::++/:+s`             
+echo +oooooooooooooooo++oosyhhdddddddddddddddddddddddddddddddddh+/-+++++++/o+:/++++++//oy.               
+echo :+///+++oooooooo++oooooooooossyhhddddddddddddddddddddddddh+/-+o+++++o+//++++o+++/+y.                
+echo  -soo++//////++////++ossssoooo++o+oosyyhhdddddddddddddddho/:+ooooo++++++ooooo++/+y-                 
+echo    .-:/+osoo++////:::::://+++oooshssoo++++oosyyhdddddddho/:+ooooooooo+oooooo++/+s:                  
+echo           `-:/+osoo++//:::::::://++ossooooooo+++++oosyyo/:+ooooooooooooo+oo++//s/                   
+echo                  `-:/+osoo++//::::::::://+++osssso++++++-/ooo+oooo+++oooooo+//s+                  
+echo                         `.-:/+oso/.-:/:::::-::://++++++-/++o++sooo+ooooooo+//s+                     
+echo                                 .-::/osoo++//:::::--:::/+++/++ooss+o+oooo+//so       
+echo                                       `.-:/+osoo++//:://///++++++oooooo+//os                    
+echo                                               .-:/+ossoo++//://////+++///os`                       
+echo                                                      `.-:/+osso+++/::::/os`                        
+echo                                                              `.-:/+ossss+` 
+echo ThreeDeus for JPN soundhax by jijipwn
+echo Press anything to start...  
+pause>null
+cls
+echo Downloading files, please wait...
+echo Downloading boot.3dsx
+curl -LO https://github.com/fincs/new-hbmenu/releases/download/v2.0.0/boot.3dsx
+echo Downloading soundhax-jpn-n3ds.m4a
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-jpn-n3ds.m4a
+echo Downloading soundhax-jpn-o3ds.m4a
+curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-jpn-o3ds.m4a
+cls
+color 0a
+echo ThreeDeus download complete!
+echo You will need to get otherapp.bin manually
+echo Press anything to open the otherapp generator and the guide.
+pause>null
+start "" https://smealum.github.io/3ds/#otherapp
+start "" https://3ds.hacks.guide/homebrew-launcher-(soundhax)
+goto home
+
+:KORHB
 cls
 color 0d
 echo                            `:--.------...``                                                         
@@ -664,16 +1016,6 @@ echo Downloading soundhax-kor-n3ds.m4a
 curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-kor-n3ds.m4a
 echo Downloading soundhax-kor-o3ds.m4a
 curl -LO https://github.com/nedwill/soundhax/blob/master/soundhax-kor-o3ds.m4a
-echo Downloading SafeB9SInstaller
-curl -LO https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip
-echo Downloading Boot9Strap
-curl -LO https://github.com/SciresM/Boot9Strap/releases/download/1.3/Boot9Strap-1.3.zip
-echo Downloading safehax.3dsx
-curl -LO https://github.com/TiniVi/safehax/releases/download/r27/safehax.3dsx
-echo Downloading udsploit.3dsx
-curl -LO https://github.com/smealum/udsploit/releases/download/1.0/udsploit.3dsx
-echo Downloading Luma3DS
-curl -LO https://github.com/AuroraWright/Luma3DS/releases/download/v8.1.1/Luma3DSv8.1.1.7z
 cls
 color 0a
 echo ThreeDeus download complete!
@@ -684,24 +1026,32 @@ start "" https://smealum.github.io/3ds/#otherapp
 start "" https://3ds.hacks.guide/homebrew-launcher-(soundhax)
 goto home
 
-:essentials
-color 0d
-cls
-echo Downloading files, please wait...
-echo Downloading FreeShop
-curl -LO https://get.freeshop.pw/latest  freeShop-latest.cia"
-echo Downloading PKSM
-curl -LO https://github.com/BernardoGiordano/PKSM/releases/download/4.5.0/PKSM.cia
-echo Downloading BootNTR-Selector
-curl -LO https://github.com/Nanquitas/BootNTR/releases/download/v.2.9/BootNTRSelector-PabloMK7-Banner.cia
-cls
-color 0a
-echo ThreeDeus download complete!
-echo Press anything to go back home
-pause>null
-goto home
+:DSI
+color 0c
+cls                                                                                                                                                  
+echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
+echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
+echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
+echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
+echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
+echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
+echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
+echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 DSI
+echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P'
+echo.
+echo Select a task:
+echo =============
+echo.
+echo 1) I'm on 1.4.5 and I have Flipnote Studio.
+echo 2) Go Back
+echo.                                                                                               
+set /p web=Type option:
+if "%web%"=="1" goto DSIUGO
+if "%web%"=="2" goto home
+goto DSI
 
-:ugousa
+:DSIUGO
 cls
 color 0d                                                                                                 
 echo                                  `-shhso/:.``                                                       
@@ -743,43 +1093,58 @@ echo                                   `````````.:/oyhhhhhhhhhhhhhhhhhhhhhy/   `
 echo                                             `    .:+syddhhhhhhhhhdhyy-``` `                         
 echo                                                 ``````.-/shhhhhhdhho.``````                         
 echo                                                          `..-/+oso:                                                                                                                                    
-echo ThreeDeus for ugopwn in USA by jijipwn
+echo ThreeDeus for ugopwn by jijipwn
 echo Press anything to start...
 pause>null
 cls
 echo Downloading files, please wait...
 echo Downloading ugopwn for USA
-curl -LO https://github.com/dsiguide/dsiguide.github.io/raw/master/files/ugopwn.zip
-echo Downloading fwtool
-megadl https://mega.nz/#!AzYlHQ4Q!Ok4krwUPXcvPC2f0tgC4W1PA_0SPnTMAVXUFP3GfM3c
-echo Downloading HXD
-curl -LO http://mh-nexus.de/downloads/HxDen.zip
-echo Downloading DSi SRL Extract
-curl -LO https://github.com/dsiguide/dsiguide.github.io/raw/master/files/dsi_srl_extract.zip
-echo Downloading NO$GBA
-curl -LO https://www.emuparadise.me/emulators/files/user/n-west-w-1776.zip
-echo Downloading codes.txt
-megadl https://mega.nz/#!FuwTBDTA!H9k5xUYRa_dam6oHpBQNi-pxL4bA4uoGU3xd1ni34h4
-echo Downloading twltool
-megadl https://mega.nz/#!sm4BWKoQ!KgHd58CzKknqmGQO2nicnn-JYcYixB9YZdqQz4Lm-Z8
+curl -LO https://dsiguide.me/files/ugopwn.zip
+echo Downloading twlnf
+curl -LO https://github.com/Jimmy-Z/twlnf/releases/download/0.3.1a/twlnf-v0.3.1a.7z
+echo Downloading DSi SRL Extractor
+curl -LO https://dsiguide.me/files/dsi_srl_extract.zip
+echo Downloading twlnf USA Installation Script
+curl -LO https://cdn.rawgit.com/dsiguide/dsiguide.github.io/f9ca62c6/files/install-1.4-USA.nfs
+echo Downloading twlnf EUR Installation Script
+curl -LO https://cdn.rawgit.com/dsiguide/dsiguide.github.io/f9ca62c6/files/install-1.4-EUR.nfs
 echo Downloading NUSDownloader
-megadl https://mega.nz/#!8mZEVTyZ!hMvqWmnjiylYEGAGHfaQOwfKSnQBJX1e5VfBgFJo0vw
-echo Downloading OSFmount
-curl -LO https://www.osforensics.com/downloads/osfmount.exe
-echo Downloading DSi Common Key Bin
-curl -LO https://dsiguide.me/files/DSiKeyGrabber.zip
-echo Downloading the DSi Bios
-curl -LO https://archive.org/download/DSiFirmwareFiles/DSi%20firmware%20files.zip
-echo Downloading DSi Footer Template
-curl -LO https://github.com/dsiguide/dsiguide.github.io/raw/master/files/dsi%20footer%20template.bin
+curl -LO https://dsiguide.me/files/NUSDownloader_v19_DSi.zip
+echo Downloading Python 3
+curl -LO https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe
 cls
 color 0a
 echo ThreeDeus download complete!
 echo You will need to read the guide
 echo Press anything to open the guide
 pause>null
-start "" https://dsiguide.me/downgrading
+start "" https://dsiguide.me/downgrading-easy
 goto home
+
+:WIIU
+color 0c
+cls                                                                                                                                                  
+echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
+echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
+echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
+echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
+echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
+echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
+echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
+echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 WII U
+echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P'
+echo.
+echo Select a task:
+echo =============
+echo.
+echo 1) I want to mod my Wii U
+echo 2) Go Back
+echo.                                                                                               
+set /p web=Type option:
+if "%web%"=="1" goto wiiumod
+if "%web%"=="2" goto home
+goto WIIU
 
 :wiiumod
 cls
@@ -843,6 +1208,31 @@ echo Press anything to open the guide
 pause>null
 start "" https://wiiu.hacks.guide/get-started
 goto home
+
+:WII
+color 0c
+cls                                                                                                                                                  
+echo   8888888 8888888888 8 8888        8 8 888888888o.   8 8888888888   8 8888888888   8 888888888o.      8 8888888888   8 8888      88    d888888o.   
+echo         8 8888       8 8888        8 8 8888    `88.  8 8888         8 8888         8 8888    `^888.   8 8888         8 8888      88  .`8888:' `88. 
+echo         8 8888       8 8888        8 8 8888     `88  8 8888         8 8888         8 8888        `88. 8 8888         8 8888      88  8.`8888.   Y8 
+echo         8 8888       8 8888        8 8 8888     ,88  8 8888         8 8888         8 8888         `88 8 8888         8 8888      88  `8.`8888.     
+echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 888888888888 8 8888          88 8 888888888888 8 8888      88   `8.`8888.    
+echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
+echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
+echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 WII
+echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P'
+echo.
+echo Select a task:
+echo =============
+echo.
+echo 1) I want to mod my Wii
+echo 2) Go Back
+echo.                                                                                               
+set /p web=Type option:
+if "%web%"=="1" goto wiimod
+if "%web%"=="2" goto home
+goto WII
 
 :wiimod
 cls
@@ -913,7 +1303,4 @@ echo Press anything to open the guide
 pause>null
 start "" https://wii.guide/letterbomb
 goto home
-
-:curl
-curl -LO 
 
