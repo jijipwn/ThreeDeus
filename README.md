@@ -38,8 +38,9 @@ A: Of Course!
 ### How do I use it?
 A: Just run the .bat/py file, simple
 ### Note: you need cURL for it to work now, you can download it [here](https://curl.haxx.se/download.html)
-~~### Note: you need mega-tools for it to work now, you can download it [here](https://megatools.megous.com/)~~
-### ^ looks like all links don't use mega, but still get it just in-case.
+~~Note: you need mega-tools for it to work now, you can download it [here](https://megatools.megous.com/)~~
+
+^ looks like all links don't use mega, but still get it just in-case.
 
 ### Does it do everything for me?
 A: No... It only Downloads the files, and opens the guide, you need to do it yourself 
