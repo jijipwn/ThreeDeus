@@ -1,4 +1,4 @@
-# ThreeDeus - Brick Proof Quick Downloader for Nintendo Homebrew
+# ThreeDeus - Quick Downloader for Nintendo Homebrew
 
 ### What is it?
 ThreeDeus does what it says above, It downloads the files needed for Homebrew for your console of choice (Wii U, 3DS, Wii, DSi)
