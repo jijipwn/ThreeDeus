@@ -13,7 +13,7 @@ echo         8 8888       8 8888        8 8 8888.   ,88'  8 888888888888 8 88888
 echo         8 8888       8 8888        8 8 888888888P'   8 8888         8 8888         8 8888          88 8 8888         8 8888      88    `8.`8888.   
 echo         8 8888       8 8888888888888 8 8888`8b       8 8888         8 8888         8 8888         ,88 8 8888         8 8888      88     `8.`8888.  
 echo         8 8888       8 8888        8 8 8888 `8b.     8 8888         8 8888         8 8888        ,88' 8 8888         ` 8888     ,8P 8b   `8.`8888. 
-echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 v5.0
+echo         8 8888       8 8888        8 8 8888   `8b.   8 8888         8 8888         8 8888    ,o88P'   8 8888           8888   ,d8P  `8b.  ;8.`8888 v5.0B-1
 echo         8 8888       8 8888        8 8 8888     `88. 8 888888888888 8 888888888888 8 888888888P'      8 888888888888    `Y88888P'    `Y8888P ,88P' by jijipwn
 echo.
 echo Select a task:
@@ -279,11 +279,81 @@ if "%web%"=="4" goto 112
 goto ntsk
 
 :SED
-echo You need to use Seedminer:
-echo Press any key to open the thread.
+cls
+color 0d
+echo                            `:--.------...``                                                         
+echo                           .:`........`....-------...`                                               
+echo                          `/. ..................```....-----...``  
+echo                          /. ..............................``....-----...`` 
+echo                         :.`.............::--.................::-...````...-----...``
+echo                        .-`.............+hhhhysso+/::-........--..............````....-......`       
+echo                       `:`............./hhhhhhhhhhhhhhyyso++/:--........................````.....-.`    
+echo                       /`.............-yhhhhhhhhhhhhhhhhhhhhhhhhyyso+//:--.......................``:+        
+echo                      :.`.............shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyyso+//:-...............`.- 
+echo                     --`.............+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs..............``.-     
+echo                    .:`.............:yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh:.............``.-`
+echo                    :`.............-yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh+..............`.-- 
+echo                   :``.............shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs..............``--  
+echo                  -.`.............+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy-......`......``.-.  
+echo                 .-`.............:yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh/.....`........``-:   
+echo                `:`.............-yhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs.......`......``-:    
+echo                .+-::----.......ohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy-..............`.-.    
+echo               +:/+ooo+//::----.::/+osyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh/..............:.--     
+echo               //---::://+++++++//:::::::::/+osyyhhhhhhhhhhhhhhhhhhhhhhhhhhho.............o//-:`     
+echo               .o:---..`....--::/+++++++++/:::----://+osyhhhhhhhhhhhhhhhhhhy.............--`.-.      
+echo              .so+//::--.....`````..---::/++++++++///:::--::/++osyhhhhhhhhy:.............. `-:       
+echo             -sooo++++++++//::-::--..``````..--:://+++++++////:::--::/+oos+..........``````.:`       
+echo            :so+/+ssyyso+/oooo++/sso+/::---...``````..--:://+++++++++++///:-.......```````.-.        
+echo           /so/+yhhhhhhyoo/ooo++dmmmdmddhyso++/:----..```````..--::/++++++++/////:--....``-:         
+echo          +so/+shhhhhhho/o+oo++dmmmmmmmmmmdddddddysso+/::---..```````..--::////+++++/::-`.:`         
+echo        `osooooooosso+::++o++odmmmdddddddddddddddddddddddhyso+//:---.```````....--::////+            
+echo       `ooooooo+++///++ooo++oddmdddddddddddddddddddddddddddddddddhs+:-::---............-+.           
+echo      .oooooooooooooooooo++sdddddddddddddddddddddddddddddddddddddy+/-+++++++//:::::-----/:           
+echo     -soooooooso/+ooooooo/sdddddddddddddddddddddddddddddddddddddy+/-+ooo++ooo+++++++//::s-           
+echo    -soooosooooo+o+ooooo/ydddddddddddddddddddddddddddddddddddddh+/-+oooo+/os+:+++++++//s+            
+echo   :oooo+//oss+os/:oooo/ydddddddddddddddddddddddddddddddddddddh+/-++oso/++/::+++++++/:oo             
+echo  :ooooooo+oo-++//ooo+/ydddddddddddddddddddddddddddddddddddddh+/-++/:::/++++oyyo/++/:os              
+echo /oooooooo++/+oooooo+/hdddddddddddddddddddddddddddddddddddddh+/-++++++oss+++/:::++/:+s`             
+echo +oooooooooooooooo++oosyhhdddddddddddddddddddddddddddddddddh+/-+++++++/o+:/++++++//oy.               
+echo :+///+++oooooooo++oooooooooossyhhddddddddddddddddddddddddh+/-+o+++++o+//++++o+++/+y.                
+echo  -soo++//////++////++ossssoooo++o+oosyyhhdddddddddddddddho/:+ooooo++++++ooooo++/+y-                 
+echo    .-:/+osoo++////:::::://+++oooshssoo++++oosyyhdddddddho/:+ooooooooo+oooooo++/+s:                  
+echo           `-:/+osoo++//:::::::://++ossooooooo+++++oosyyo/:+ooooooooooooo+oo++//s/                   
+echo                  `-:/+osoo++//::::::::://+++osssso++++++-/ooo+oooo+++oooooo+//s+                  
+echo                         `.-:/+oso/.-:/:::::-::://++++++-/++o++sooo+ooooooo+//s+                     
+echo                                 .-::/osoo++//:::::--:::/+++/++ooss+o+oooo+//so       
+echo                                       `.-:/+osoo++//:://///++++++oooooo+//os                    
+echo                                               .-:/+ossoo++//://////+++///os`                       
+echo                                                      `.-:/+osso+++/::::/os`                        
+echo                                                              `.-:/+ossss+`   
+echo ThreeDeus for Seedminer by jijipwn
+echo Press anything to start...
+pause>null
+cls
+echo Downloading files, please wait...
+echo Downloading Seedminer
+curl -lO https://github.com/zoogie/seedminer/releases/download/v2.0beta/RELEASE_v2.0beta.zip
+echo Downloading Tadpole
+curl -lO https://github.com/zoogie/TADpole/releases/download/v1.2/TADpole.zip
+echo Downloading Python 2.7
+curl -LO https://www.python.org/ftp/python/2.7.14/python-2.7.14.msi
+cls
+color 0a
+echo ThreeDeus download complete!
+echo ThreeDeus will now install Pycryptodomex
+echo Make sure to run the Python installer!
+echo Also make sure to add Python to PATH!
+pause
+cls
+cd C:\Python27\scripts
+pip install pycryptodomex
+cls
+echo You will need to read the thread
+echo Press anything to open the thread
 pause>null
 start "" https://gbatemp.net/threads/seedminer-single-system-dsiware-injection.495685/
 goto home
+
 
 :b9s
 cls
