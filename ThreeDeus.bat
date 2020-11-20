@@ -55,7 +55,7 @@ echo 1) Open 3ds.hacks.guide
 echo 2) Open dev.3ds.guide
 echo 3) Open wii.guide
 echo 4) Open wiiu.hacks.guide
-echo 5) Open dsiguide.me
+echo 5) Open dsiguide.github.io
 echo 6) Go Back
 echo.                                                                                               
 set /p web=Type option:
@@ -63,7 +63,7 @@ if "%web%"=="1" start "" https://3ds.hacks.guide
 if "%web%"=="2" start "" https://dev.3ds.hacks.guide
 if "%web%"=="3" start "" https://wii.guide
 if "%web%"=="4" start "" https://wiiu.hacks.guide
-if "%web%"=="5" start "" https://dsiguide.me
+if "%web%"=="5" start "" https://dsiguide.github.io/
 if "%web%"=="6" goto home
 goto guide
 
@@ -1176,17 +1176,17 @@ pause>null
 cls
 echo Downloading files, please wait...
 echo Downloading ugopwn for USA
-curl -LO https://dsiguide.me/files/ugopwn.zip
+curl -LO https://dsiguide.github.io/files/ugopwn.zip
 echo Downloading twlnf
 curl -LO https://github.com/Jimmy-Z/twlnf/releases/download/0.3.1a/twlnf-v0.3.1a.7z
 echo Downloading DSi SRL Extractor
-curl -LO https://dsiguide.me/files/dsi_srl_extract.zip
+curl -LO https://dsiguide.github.io/files/dsi_srl_extract.zip
 echo Downloading twlnf USA Installation Script
 curl -LO https://cdn.rawgit.com/dsiguide/dsiguide.github.io/f9ca62c6/files/install-1.4-USA.nfs
 echo Downloading twlnf EUR Installation Script
 curl -LO https://cdn.rawgit.com/dsiguide/dsiguide.github.io/f9ca62c6/files/install-1.4-EUR.nfs
 echo Downloading NUSDownloader
-curl -LO https://dsiguide.me/files/NUSDownloader_v19_DSi.zip
+curl -LO https://dsiguide.github.io/files/NUSDownloader_v19_DSi.zip
 echo Downloading Python 3
 curl -LO https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe
 cls
@@ -1195,7 +1195,7 @@ echo ThreeDeus download complete!
 echo You will need to read the guide
 echo Press anything to open the guide
 pause>null
-start "" https://dsiguide.me/downgrading-easy
+start "" https://dsiguide.github.io/downgrading-easy
 goto home
 
 :WIIU
